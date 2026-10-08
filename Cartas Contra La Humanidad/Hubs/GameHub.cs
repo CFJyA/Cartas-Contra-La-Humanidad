@@ -171,7 +171,7 @@ public class GameHub : Hub
             {
                 var whiteCards = _gameManager.GetDefaultWhiteCards();
                 var blackCards = _gameManager.GetDefaultBlackCards();
-                room.StartGame(whiteCards, blackCards);
+                room.StartGame(whiteCards, blackCards, isRematch: true);
             }
         }
 

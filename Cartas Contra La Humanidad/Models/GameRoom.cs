@@ -143,16 +143,24 @@ public class GameRoom
         eligiblePlayers[CurrentCzarIndex].IsCzar = true;
     }
 
-    public bool StartGame(List<Card> initialWhiteCards, List<Card> initialBlackCards)
+    public bool StartGame(List<Card> initialWhiteCards, List<Card> initialBlackCards, bool isRematch = false)
     {
         lock (_lock)
         {
             if (Players.Count < 2) return false;
 
-            WhiteDeck = Shuffle(new List<Card>(initialWhiteCards));
-            BlackDeck = Shuffle(new List<Card>(initialBlackCards));
-            WhiteDiscard.Clear();
-            BlackDiscard.Clear();
+            if (!isRematch)
+            {
+                WhiteDeck = Shuffle(new List<Card>(initialWhiteCards));
+                BlackDeck = Shuffle(new List<Card>(initialBlackCards));
+                WhiteDiscard.Clear();
+                BlackDiscard.Clear();
+
+                foreach (var p in Players)
+                {
+                    p.Hand.Clear();
+                }
+            }
 
             CurrentRound = 0;
             CurrentCzarIndex = -1;
@@ -160,10 +168,16 @@ public class GameRoom
             foreach (var p in Players)
             {
                 p.Score = 0;
-                p.Hand.Clear();
                 p.SubmittedCards.Clear();
                 p.IsCzar = false;
-                DealCardsToPlayer(p, 10);
+                if (!isRematch)
+                {
+                    DealCardsToPlayer(p, 10);
+                }
+                else if (p.Hand.Count < 10)
+                {
+                    DealCardsToPlayer(p, 10 - p.Hand.Count);
+                }
             }
 
             if (RandoCardrissianEnabled && !Players.Any(p => p.Name == "Rando Cardrissian"))

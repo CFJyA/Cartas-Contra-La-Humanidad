@@ -57,7 +57,7 @@
     },
     {
       "id": "w_12",
-      "text": "Un koyac gigante.",
+      "text": "Un Pelón Pelo Rico gigante.",
       "type": "white"
     },
     {
@@ -102,17 +102,17 @@
     },
     {
       "id": "w_21",
-      "text": "Sebastián Piñera.",
+      "text": "Enrique Peña Nieto.",
       "type": "white"
     },
     {
       "id": "w_22",
-      "text": "Mi poto.",
+      "text": "Mi trasero.",
       "type": "white"
     },
     {
       "id": "w_23",
-      "text": "Colchones de INCAL.",
+      "text": "Colchones Atlas.",
       "type": "white"
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "id": "w_26",
-      "text": "Tulio Triviño.",
+      "text": "Chabelo.",
       "type": "white"
     },
     {
@@ -137,17 +137,17 @@
     },
     {
       "id": "w_28",
-      "text": "Empanada.",
+      "text": "Tamal Oaxaqueño.",
       "type": "white"
     },
     {
       "id": "w_29",
-      "text": "Consejos de un curadito callejero.",
+      "text": "Consejos de un teporocho.",
       "type": "white"
     },
     {
       "id": "w_30",
-      "text": "Día del completo.",
+      "text": "Día del taco.",
       "type": "white"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "id": "w_46",
-      "text": "Marepoto y tusunami.",
+      "text": "La caída de Edgar.",
       "type": "white"
     },
     {
@@ -252,7 +252,7 @@
     },
     {
       "id": "w_51",
-      "text": "Pablo Longueira.",
+      "text": "Carlos Salinas de Gortari.",
       "type": "white"
     },
     {
@@ -307,7 +307,7 @@
     },
     {
       "id": "w_62",
-      "text": "Evelyn Matthei.",
+      "text": "Elba Esther Gordillo.",
       "type": "white"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "id": "w_70",
-      "text": "Maracas.",
+      "text": "Teiboleras.",
       "type": "white"
     },
     {
@@ -357,7 +357,7 @@
     },
     {
       "id": "w_72",
-      "text": "Villa Grimaldi.",
+      "text": "Lecumberri.",
       "type": "white"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "id": "w_87",
-      "text": "La Jueza.",
+      "text": "Laura Bozzo.",
       "type": "white"
     },
     {
@@ -447,12 +447,12 @@
     },
     {
       "id": "w_90",
-      "text": "Martin Carcamo.",
+      "text": "Adal Ramones.",
       "type": "white"
     },
     {
       "id": "w_91",
-      "text": "Pacificación de la Araucanía.",
+      "text": "La Conquista.",
       "type": "white"
     },
     {
@@ -617,7 +617,7 @@
     },
     {
       "id": "w_124",
-      "text": "Promo 2x1 Chacarero.",
+      "text": "Promo 2x1 Tacos al Pastor.",
       "type": "white"
     },
     {
@@ -722,7 +722,7 @@
     },
     {
       "id": "w_145",
-      "text": "Machitún.",
+      "text": "Limpia con huevo.",
       "type": "white"
     },
     {
@@ -737,17 +737,17 @@
     },
     {
       "id": "w_148",
-      "text": "Yögen Fruz.",
+      "text": "La Michoacana.",
       "type": "white"
     },
     {
       "id": "w_149",
-      "text": "Wena Naty.",
+      "text": "Lady Tacos de Canasta.",
       "type": "white"
     },
     {
       "id": "w_150",
-      "text": "Eduardo Frei.",
+      "text": "Vicente Fox.",
       "type": "white"
     },
     {
@@ -2112,7 +2112,7 @@
     },
     {
       "id": "w_423",
-      "text": "Preámbulo a poto pelado.",
+      "text": "Cachondeo a nalga pelada.",
       "type": "white"
     },
     {
@@ -2605,7 +2605,7 @@
     },
     {
       "id": "b_34",
-      "text": "A la gente cuica le gusta ______.",
+      "text": "A la gente fresa le gusta ______.",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2668,7 +2668,7 @@
     },
     {
       "id": "b_43",
-      "text": "En Colina 1, se dice que puedes cambiar 200 cigarros por ______.",
+      "text": "En Reclusorio Norte, se dice que puedes cambiar 200 cigarros por ______.",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2682,7 +2682,7 @@
     },
     {
       "id": "b_45",
-      "text": "¿Qué no te gustaría encontrar en tu pollo mongoliano?",
+      "text": "¿Qué no te gustaría encontrar en tu pozole?",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2717,14 +2717,14 @@
     },
     {
       "id": "b_50",
-      "text": "Mientras EEUU competía con la URSS en la carrera espacial, el gobierno chileno invirtió millones en la investigación de ______.",
+      "text": "Mientras EEUU competía con la URSS en la carrera espacial, el gobierno mexicano invirtió millones en la investigación de ______.",
       "pick": 1,
       "draw": 0,
       "type": "black"
     },
     {
       "id": "b_51",
-      "text": "Después del terremoto, Farkas le llevó ______ a la gente de Concepción.",
+      "text": "Después del terremoto, Carlos Slim le llevó ______ a la gente de Iztapalapa.",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2822,7 +2822,7 @@
     },
     {
       "id": "b_65",
-      "text": "¿Qué ayuda a Don Francisco a soltar sus gases?",
+      "text": "¿Qué ayuda a Facundo a soltar sus gases?",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2920,7 +2920,7 @@
     },
     {
       "id": "b_79",
-      "text": "¿Sobre qué está pensando Joaquín Lavín en estos momentos?",
+      "text": "¿Sobre qué está pensando AMLO en estos momentos?",
       "pick": 1,
       "draw": 0,
       "type": "black"
@@ -2941,7 +2941,7 @@
     },
     {
       "id": "b_82",
-      "text": "Sábado de Reportajes presenta: «______, la historia de ______».",
+      "text": "La Rosa de Guadalupe presenta: «______, la historia de ______».",
       "pick": 2,
       "draw": 0,
       "type": "black"

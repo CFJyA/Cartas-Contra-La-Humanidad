@@ -2,9 +2,9 @@
 (function () {
     let connection = null;
     let currentRoom = null;
-    let myPlayerId = localStorage.getItem('cah_playerId') || '';
-    let myPlayerName = localStorage.getItem('cah_playerName') || '';
-    let myAvatar = localStorage.getItem('cah_avatar') || '😎';
+    let myPlayerId = sessionStorage.getItem('cah_playerId') || '';
+    let myPlayerName = sessionStorage.getItem('cah_playerName') || '';
+    let myAvatar = sessionStorage.getItem('cah_avatar') || '😎';
     let selectedCards = []; // Array of card objects currently selected to play
     let soundMuted = false;
 
@@ -34,7 +34,7 @@
                 document.querySelectorAll('.avatar-option').forEach(el => el.classList.remove('active'));
                 btn.classList.add('active');
                 myAvatar = emoji;
-                localStorage.setItem('cah_avatar', myAvatar);
+                sessionStorage.setItem('cah_avatar', myAvatar);
                 if (window.soundEngine) window.soundEngine.playCardClick();
             };
             container.appendChild(btn);
@@ -274,7 +274,7 @@
             .then(res => {
                 if (res.success) {
                     myPlayerId = res.playerId;
-                    localStorage.setItem('cah_playerId', myPlayerId);
+                    sessionStorage.setItem('cah_playerId', myPlayerId);
                     sessionStorage.setItem('cah_active_room', res.roomCode);
                     if (window.soundEngine) window.soundEngine.playCardSubmit();
                 }
@@ -318,7 +318,7 @@
             .then(res => {
                 if (res.success) {
                     myPlayerId = res.playerId;
-                    localStorage.setItem('cah_playerId', myPlayerId);
+                    sessionStorage.setItem('cah_playerId', myPlayerId);
                     sessionStorage.setItem('cah_active_room', res.roomCode);
                     if (window.soundEngine) window.soundEngine.playCardClick();
                 } else if (res.message === 'gameInProgress') {
@@ -416,7 +416,7 @@
             return null;
         }
         myPlayerName = val;
-        localStorage.setItem('cah_playerName', myPlayerName);
+        sessionStorage.setItem('cah_playerName', myPlayerName);
         return val;
     }
 
