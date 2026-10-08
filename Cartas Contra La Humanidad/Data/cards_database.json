@@ -1,0 +1,3041 @@
+{
+  "whiteCards": [
+    {
+      "id": "w_1",
+      "text": "Quemarse.",
+      "type": "white"
+    },
+    {
+      "id": "w_2",
+      "text": "Racismo.",
+      "type": "white"
+    },
+    {
+      "id": "w_3",
+      "text": "Olor a gente vieja.",
+      "type": "white"
+    },
+    {
+      "id": "w_4",
+      "text": "Un micropene.",
+      "type": "white"
+    },
+    {
+      "id": "w_5",
+      "text": "Mujeres en comerciales de yogurt.",
+      "type": "white"
+    },
+    {
+      "id": "w_6",
+      "text": "Connotaciones clasistas.",
+      "type": "white"
+    },
+    {
+      "id": "w_7",
+      "text": "Importarte una mierda el Tercer Mundo.",
+      "type": "white"
+    },
+    {
+      "id": "w_8",
+      "text": "Meterme un jarro de vidrio en el ano.",
+      "type": "white"
+    },
+    {
+      "id": "w_9",
+      "text": "Rehabilitación por orden judicial.",
+      "type": "white"
+    },
+    {
+      "id": "w_10",
+      "text": "Un molino lleno de cadáveres.",
+      "type": "white"
+    },
+    {
+      "id": "w_11",
+      "text": "Los gays.",
+      "type": "white"
+    },
+    {
+      "id": "w_12",
+      "text": "Un koyac gigante.",
+      "type": "white"
+    },
+    {
+      "id": "w_13",
+      "text": "Niños africanos.",
+      "type": "white"
+    },
+    {
+      "id": "w_14",
+      "text": "Un implante mamario asimétrico.",
+      "type": "white"
+    },
+    {
+      "id": "w_15",
+      "text": "Comérselo todo y vomitar.",
+      "type": "white"
+    },
+    {
+      "id": "w_16",
+      "text": "El inmigrante trabajador.",
+      "type": "white"
+    },
+    {
+      "id": "w_17",
+      "text": "Un complejo de Edipo.",
+      "type": "white"
+    },
+    {
+      "id": "w_18",
+      "text": "Un caballo pequeño.",
+      "type": "white"
+    },
+    {
+      "id": "w_19",
+      "text": "Mocos.",
+      "type": "white"
+    },
+    {
+      "id": "w_20",
+      "text": "Envidia de pene.",
+      "type": "white"
+    },
+    {
+      "id": "w_21",
+      "text": "Sebastián Piñera.",
+      "type": "white"
+    },
+    {
+      "id": "w_22",
+      "text": "Mi poto.",
+      "type": "white"
+    },
+    {
+      "id": "w_23",
+      "text": "Colchones de INCAL.",
+      "type": "white"
+    },
+    {
+      "id": "w_24",
+      "text": "Cienciología.",
+      "type": "white"
+    },
+    {
+      "id": "w_25",
+      "text": "Arcadas.",
+      "type": "white"
+    },
+    {
+      "id": "w_26",
+      "text": "Tulio Triviño.",
+      "type": "white"
+    },
+    {
+      "id": "w_27",
+      "text": "Darth Vader.",
+      "type": "white"
+    },
+    {
+      "id": "w_28",
+      "text": "Empanada.",
+      "type": "white"
+    },
+    {
+      "id": "w_29",
+      "text": "Consejos de un curadito callejero.",
+      "type": "white"
+    },
+    {
+      "id": "w_30",
+      "text": "Día del completo.",
+      "type": "white"
+    },
+    {
+      "id": "w_31",
+      "text": "Hombres japoneses ancianos.",
+      "type": "white"
+    },
+    {
+      "id": "w_32",
+      "text": "Muestras gratis.",
+      "type": "white"
+    },
+    {
+      "id": "w_33",
+      "text": "Estrógeno.",
+      "type": "white"
+    },
+    {
+      "id": "w_34",
+      "text": "Tensión sexual.",
+      "type": "white"
+    },
+    {
+      "id": "w_35",
+      "text": "Hambruna.",
+      "type": "white"
+    },
+    {
+      "id": "w_36",
+      "text": "Un pelo púbico abandonado.",
+      "type": "white"
+    },
+    {
+      "id": "w_37",
+      "text": "Hombres.",
+      "type": "white"
+    },
+    {
+      "id": "w_38",
+      "text": "Conmovedores huérfanos.",
+      "type": "white"
+    },
+    {
+      "id": "w_39",
+      "text": "Pedazos de autostopista muerto.",
+      "type": "white"
+    },
+    {
+      "id": "w_40",
+      "text": "Una bolsa de habichuelas mágicas.",
+      "type": "white"
+    },
+    {
+      "id": "w_41",
+      "text": "Represión.",
+      "type": "white"
+    },
+    {
+      "id": "w_42",
+      "text": "Cabriolas.",
+      "type": "white"
+    },
+    {
+      "id": "w_43",
+      "text": "Mi estado amoroso.",
+      "type": "white"
+    },
+    {
+      "id": "w_44",
+      "text": "Compensación excesiva.",
+      "type": "white"
+    },
+    {
+      "id": "w_45",
+      "text": "Orinar un poco.",
+      "type": "white"
+    },
+    {
+      "id": "w_46",
+      "text": "Marepoto y tusunami.",
+      "type": "white"
+    },
+    {
+      "id": "w_47",
+      "text": "Una bola de cerumen, semen, y uñas de pie.",
+      "type": "white"
+    },
+    {
+      "id": "w_48",
+      "text": "Torsión testicular.",
+      "type": "white"
+    },
+    {
+      "id": "w_49",
+      "text": "El Diablo en persona.",
+      "type": "white"
+    },
+    {
+      "id": "w_50",
+      "text": "Age of Empires.",
+      "type": "white"
+    },
+    {
+      "id": "w_51",
+      "text": "Pablo Longueira.",
+      "type": "white"
+    },
+    {
+      "id": "w_52",
+      "text": "Hitler robótico.",
+      "type": "white"
+    },
+    {
+      "id": "w_53",
+      "text": "Ser fabuloso.",
+      "type": "white"
+    },
+    {
+      "id": "w_54",
+      "text": "Fotos de tetas.",
+      "type": "white"
+    },
+    {
+      "id": "w_55",
+      "text": "Una caricia gentil en la parte interior del muslo.",
+      "type": "white"
+    },
+    {
+      "id": "w_56",
+      "text": "Testigos de Jehová.",
+      "type": "white"
+    },
+    {
+      "id": "w_57",
+      "text": "Los ritmos de África.",
+      "type": "white"
+    },
+    {
+      "id": "w_58",
+      "text": "El testículo que perdió Lance Armstrong.",
+      "type": "white"
+    },
+    {
+      "id": "w_59",
+      "text": "Pedófilos.",
+      "type": "white"
+    },
+    {
+      "id": "w_60",
+      "text": "El Papa.",
+      "type": "white"
+    },
+    {
+      "id": "w_61",
+      "text": "Serpientes voladoras.",
+      "type": "white"
+    },
+    {
+      "id": "w_62",
+      "text": "Evelyn Matthei.",
+      "type": "white"
+    },
+    {
+      "id": "w_63",
+      "text": "«A veces me como una olla.»",
+      "type": "white"
+    },
+    {
+      "id": "w_64",
+      "text": "Pelea sexy de almohadas.",
+      "type": "white"
+    },
+    {
+      "id": "w_65",
+      "text": "Invadir Polonia.",
+      "type": "white"
+    },
+    {
+      "id": "w_66",
+      "text": "Mejoras cibernéticas.",
+      "type": "white"
+    },
+    {
+      "id": "w_67",
+      "text": "Muertes civiles.",
+      "type": "white"
+    },
+    {
+      "id": "w_68",
+      "text": "Trabajos.",
+      "type": "white"
+    },
+    {
+      "id": "w_69",
+      "text": "El orgasmo femenino.",
+      "type": "white"
+    },
+    {
+      "id": "w_70",
+      "text": "Maracas.",
+      "type": "white"
+    },
+    {
+      "id": "w_71",
+      "text": "Los Boy Scouts.",
+      "type": "white"
+    },
+    {
+      "id": "w_72",
+      "text": "Villa Grimaldi.",
+      "type": "white"
+    },
+    {
+      "id": "w_73",
+      "text": "Pintar con los dedos.",
+      "type": "white"
+    },
+    {
+      "id": "w_74",
+      "text": "Mirada de Osito Cariñosito.",
+      "type": "white"
+    },
+    {
+      "id": "w_75",
+      "text": "Los judíos.",
+      "type": "white"
+    },
+    {
+      "id": "w_76",
+      "text": "Ser marginado.",
+      "type": "white"
+    },
+    {
+      "id": "w_77",
+      "text": "La sangre de Cristo.",
+      "type": "white"
+    },
+    {
+      "id": "w_78",
+      "text": "Padres muertos.",
+      "type": "white"
+    },
+    {
+      "id": "w_79",
+      "text": "El arte de la seducción.",
+      "type": "white"
+    },
+    {
+      "id": "w_80",
+      "text": "Morir de difteria.",
+      "type": "white"
+    },
+    {
+      "id": "w_81",
+      "text": "Mr. Musculo, justo detrás de ti.",
+      "type": "white"
+    },
+    {
+      "id": "w_82",
+      "text": "Imanes.",
+      "type": "white"
+    },
+    {
+      "id": "w_83",
+      "text": "Centros de madres.",
+      "type": "white"
+    },
+    {
+      "id": "w_84",
+      "text": "Chaparritas.",
+      "type": "white"
+    },
+    {
+      "id": "w_85",
+      "text": "Natalie Portman.",
+      "type": "white"
+    },
+    {
+      "id": "w_86",
+      "text": "Agricultura.",
+      "type": "white"
+    },
+    {
+      "id": "w_87",
+      "text": "La Jueza.",
+      "type": "white"
+    },
+    {
+      "id": "w_88",
+      "text": "Sexo sorpresa!",
+      "type": "white"
+    },
+    {
+      "id": "w_89",
+      "text": "El plan de los homosexuales.",
+      "type": "white"
+    },
+    {
+      "id": "w_90",
+      "text": "Martin Carcamo.",
+      "type": "white"
+    },
+    {
+      "id": "w_91",
+      "text": "Pacificación de la Araucanía.",
+      "type": "white"
+    },
+    {
+      "id": "w_92",
+      "text": "Un giro de trama de M. Night Shyamalan.",
+      "type": "white"
+    },
+    {
+      "id": "w_93",
+      "text": "Rimas del corte.",
+      "type": "white"
+    },
+    {
+      "id": "w_94",
+      "text": "La luz de un billón de soles.",
+      "type": "white"
+    },
+    {
+      "id": "w_95",
+      "text": "Amputados.",
+      "type": "white"
+    },
+    {
+      "id": "w_96",
+      "text": "Arrojar una virgen a un volcán.",
+      "type": "white"
+    },
+    {
+      "id": "w_97",
+      "text": "Italianos.",
+      "type": "white"
+    },
+    {
+      "id": "w_98",
+      "text": "Explosiones.",
+      "type": "white"
+    },
+    {
+      "id": "w_99",
+      "text": "Una buena olfateada.",
+      "type": "white"
+    },
+    {
+      "id": "w_100",
+      "text": "Destruir la evidencia.",
+      "type": "white"
+    },
+    {
+      "id": "w_101",
+      "text": "Niños en correas.",
+      "type": "white"
+    },
+    {
+      "id": "w_102",
+      "text": "Catapultas.",
+      "type": "white"
+    },
+    {
+      "id": "w_103",
+      "text": "Un trillón de dólares.",
+      "type": "white"
+    },
+    {
+      "id": "w_104",
+      "text": "Amigos con ventaja.",
+      "type": "white"
+    },
+    {
+      "id": "w_105",
+      "text": "Morir.",
+      "type": "white"
+    },
+    {
+      "id": "w_106",
+      "text": "Silencio.",
+      "type": "white"
+    },
+    {
+      "id": "w_107",
+      "text": "Hazte hombre!",
+      "type": "white"
+    },
+    {
+      "id": "w_108",
+      "text": "La base de datos de virus ha sido actualizada.",
+      "type": "white"
+    },
+    {
+      "id": "w_109",
+      "text": "Justin Bieber.",
+      "type": "white"
+    },
+    {
+      "id": "w_110",
+      "text": "La Sagrada Biblia.",
+      "type": "white"
+    },
+    {
+      "id": "w_111",
+      "text": "Cocos.",
+      "type": "white"
+    },
+    {
+      "id": "w_112",
+      "text": "Sanar lo gay con rezos.",
+      "type": "white"
+    },
+    {
+      "id": "w_113",
+      "text": "Embarazo adolescente.",
+      "type": "white"
+    },
+    {
+      "id": "w_114",
+      "text": "Porno alemán fetichista.",
+      "type": "white"
+    },
+    {
+      "id": "w_115",
+      "text": "La mano invisible.",
+      "type": "white"
+    },
+    {
+      "id": "w_116",
+      "text": "Mis demonios internos.",
+      "type": "white"
+    },
+    {
+      "id": "w_117",
+      "text": "Muslos poderosos.",
+      "type": "white"
+    },
+    {
+      "id": "w_118",
+      "text": "Empelotarse y mirar Nickelodeon.",
+      "type": "white"
+    },
+    {
+      "id": "w_119",
+      "text": "Deuda agobiante.",
+      "type": "white"
+    },
+    {
+      "id": "w_120",
+      "text": "Pilotos kamikaze.",
+      "type": "white"
+    },
+    {
+      "id": "w_121",
+      "text": "Enseñarle a amar a un robot.",
+      "type": "white"
+    },
+    {
+      "id": "w_122",
+      "text": "Brutalidad policial.",
+      "type": "white"
+    },
+    {
+      "id": "w_123",
+      "text": "Carne de caballo.",
+      "type": "white"
+    },
+    {
+      "id": "w_124",
+      "text": "Promo 2x1 Chacarero.",
+      "type": "white"
+    },
+    {
+      "id": "w_125",
+      "text": "Heteronormatividad.",
+      "type": "white"
+    },
+    {
+      "id": "w_126",
+      "text": "Michael Jackson.",
+      "type": "white"
+    },
+    {
+      "id": "w_127",
+      "text": "Un gorro a la moda.",
+      "type": "white"
+    },
+    {
+      "id": "w_128",
+      "text": "Dar un agarrón.",
+      "type": "white"
+    },
+    {
+      "id": "w_129",
+      "text": "Pasta base.",
+      "type": "white"
+    },
+    {
+      "id": "w_130",
+      "text": "Cambia-formas.",
+      "type": "white"
+    },
+    {
+      "id": "w_131",
+      "text": "Masturbar con los dedos.",
+      "type": "white"
+    },
+    {
+      "id": "w_132",
+      "text": "Una fiesta de cumpleaños decepcionante.",
+      "type": "white"
+    },
+    {
+      "id": "w_133",
+      "text": "El Patriarcado.",
+      "type": "white"
+    },
+    {
+      "id": "w_134",
+      "text": "Mi alma.",
+      "type": "white"
+    },
+    {
+      "id": "w_135",
+      "text": "Fiestas de machos.",
+      "type": "white"
+    },
+    {
+      "id": "w_136",
+      "text": "Lo Crónico.",
+      "type": "white"
+    },
+    {
+      "id": "w_137",
+      "text": "Eugenesia.",
+      "type": "white"
+    },
+    {
+      "id": "w_138",
+      "text": "Soluciones de administración sinergística.",
+      "type": "white"
+    },
+    {
+      "id": "w_139",
+      "text": "RoboCop.",
+      "type": "white"
+    },
+    {
+      "id": "w_140",
+      "text": "Servidumbre.",
+      "type": "white"
+    },
+    {
+      "id": "w_141",
+      "text": "Stephen Hawking hablando sucio.",
+      "type": "white"
+    },
+    {
+      "id": "w_142",
+      "text": "Un hombre al borde del orgasmo.",
+      "type": "white"
+    },
+    {
+      "id": "w_143",
+      "text": "Cagadera.",
+      "type": "white"
+    },
+    {
+      "id": "w_144",
+      "text": "Ridículo público.",
+      "type": "white"
+    },
+    {
+      "id": "w_145",
+      "text": "Machitún.",
+      "type": "white"
+    },
+    {
+      "id": "w_146",
+      "text": "Los obesos mórbidos.",
+      "type": "white"
+    },
+    {
+      "id": "w_147",
+      "text": "Condón atrapado.",
+      "type": "white"
+    },
+    {
+      "id": "w_148",
+      "text": "Yögen Fruz.",
+      "type": "white"
+    },
+    {
+      "id": "w_149",
+      "text": "Wena Naty.",
+      "type": "white"
+    },
+    {
+      "id": "w_150",
+      "text": "Eduardo Frei.",
+      "type": "white"
+    },
+    {
+      "id": "w_151",
+      "text": "Tortugas bio-ingenierizadas con aliento ácido.",
+      "type": "white"
+    },
+    {
+      "id": "w_152",
+      "text": "Sueños húmedos.",
+      "type": "white"
+    },
+    {
+      "id": "w_153",
+      "text": "Bling bling.",
+      "type": "white"
+    },
+    {
+      "id": "w_154",
+      "text": "Disparar un rifle al aire mientras penetras a un cerdo.",
+      "type": "white"
+    },
+    {
+      "id": "w_155",
+      "text": "Sexo de llamas.",
+      "type": "white"
+    },
+    {
+      "id": "w_156",
+      "text": "Necrofilia.",
+      "type": "white"
+    },
+    {
+      "id": "w_157",
+      "text": "Profanar tumbas.",
+      "type": "white"
+    },
+    {
+      "id": "w_158",
+      "text": "Depilar el área del bikini.",
+      "type": "white"
+    },
+    {
+      "id": "w_159",
+      "text": "Ave María purísima, sin pecado concebida.",
+      "type": "white"
+    },
+    {
+      "id": "w_160",
+      "text": "Múltiples heridas por puñaladas.",
+      "type": "white"
+    },
+    {
+      "id": "w_161",
+      "text": "El delicioso culo de Daniel Radcliffe.",
+      "type": "white"
+    },
+    {
+      "id": "w_162",
+      "text": "Un mono fumando un cigarro.",
+      "type": "white"
+    },
+    {
+      "id": "w_163",
+      "text": "Esmegma.",
+      "type": "white"
+    },
+    {
+      "id": "w_164",
+      "text": "Una audiencia en vivo.",
+      "type": "white"
+    },
+    {
+      "id": "w_165",
+      "text": "Hacer pucheros.",
+      "type": "white"
+    },
+    {
+      "id": "w_166",
+      "text": "La violación de nuestros mas básicos derechos humanos.",
+      "type": "white"
+    },
+    {
+      "id": "w_167",
+      "text": "Insondable estupidez.",
+      "type": "white"
+    },
+    {
+      "id": "w_168",
+      "text": "Amanecer y arcoíris.",
+      "type": "white"
+    },
+    {
+      "id": "w_169",
+      "text": "Sacudir el miembro.",
+      "type": "white"
+    },
+    {
+      "id": "w_170",
+      "text": "Supuesta diversidad cultural.",
+      "type": "white"
+    },
+    {
+      "id": "w_171",
+      "text": "Los terroristas.",
+      "type": "white"
+    },
+    {
+      "id": "w_172",
+      "text": "La constitución de 1980.",
+      "type": "white"
+    },
+    {
+      "id": "w_173",
+      "text": "Una tortuga caimán mordiéndote la punta del pene.",
+      "type": "white"
+    },
+    {
+      "id": "w_174",
+      "text": "Atropello vehicular con múltiples victimas.",
+      "type": "white"
+    },
+    {
+      "id": "w_175",
+      "text": "La Gran Depresión.",
+      "type": "white"
+    },
+    {
+      "id": "w_176",
+      "text": "Emociones.",
+      "type": "white"
+    },
+    {
+      "id": "w_177",
+      "text": "Enojarse tanto que generas una erección.",
+      "type": "white"
+    },
+    {
+      "id": "w_178",
+      "text": "Patinaje artístico del mismo sexo.",
+      "type": "white"
+    },
+    {
+      "id": "w_179",
+      "text": "Un rifle de asalto M16.",
+      "type": "white"
+    },
+    {
+      "id": "w_180",
+      "text": "Longaniza.",
+      "type": "white"
+    },
+    {
+      "id": "w_181",
+      "text": "Incesto.",
+      "type": "white"
+    },
+    {
+      "id": "w_182",
+      "text": "Garabatero.",
+      "type": "white"
+    },
+    {
+      "id": "w_183",
+      "text": "Aves que no vuelan.",
+      "type": "white"
+    },
+    {
+      "id": "w_184",
+      "text": "Hacer lo correcto.",
+      "type": "white"
+    },
+    {
+      "id": "w_185",
+      "text": "Tirarse un eructo y que venga con sorpresa.",
+      "type": "white"
+    },
+    {
+      "id": "w_186",
+      "text": "Solamente la puntita.",
+      "type": "white"
+    },
+    {
+      "id": "w_187",
+      "text": "Ser mala onda con los niños.",
+      "type": "white"
+    },
+    {
+      "id": "w_188",
+      "text": "Pañales sucios.",
+      "type": "white"
+    },
+    {
+      "id": "w_189",
+      "text": "Ver a la abuela desnuda.",
+      "type": "white"
+    },
+    {
+      "id": "w_190",
+      "text": "Ataques de polillas.",
+      "type": "white"
+    },
+    {
+      "id": "w_191",
+      "text": "Hacer trampa en este juego.",
+      "type": "white"
+    },
+    {
+      "id": "w_192",
+      "text": "Esconder una erección.",
+      "type": "white"
+    },
+    {
+      "id": "w_193",
+      "text": "Desnudez frontal.",
+      "type": "white"
+    },
+    {
+      "id": "w_194",
+      "text": "Vigorosas manos de Jazz.",
+      "type": "white"
+    },
+    {
+      "id": "w_195",
+      "text": "Pezones de cuchillo.",
+      "type": "white"
+    },
+    {
+      "id": "w_196",
+      "text": "Una cachetada suave.",
+      "type": "white"
+    },
+    {
+      "id": "w_197",
+      "text": "Los brazos de Michelle Bachelet.",
+      "type": "white"
+    },
+    {
+      "id": "w_198",
+      "text": "Herpes en la boca.",
+      "type": "white"
+    },
+    {
+      "id": "w_199",
+      "text": "Un fisicoculturista peruano.",
+      "type": "white"
+    },
+    {
+      "id": "w_200",
+      "text": "Destrucción mutua asegurada.",
+      "type": "white"
+    },
+    {
+      "id": "w_201",
+      "text": "El Rapto.",
+      "type": "white"
+    },
+    {
+      "id": "w_202",
+      "text": "El camino por delante.",
+      "type": "white"
+    },
+    {
+      "id": "w_203",
+      "text": "Stalin.",
+      "type": "white"
+    },
+    {
+      "id": "w_204",
+      "text": "Lactancia.",
+      "type": "white"
+    },
+    {
+      "id": "w_205",
+      "text": "El 27/F.",
+      "type": "white"
+    },
+    {
+      "id": "w_206",
+      "text": "El verdadero sentido de la Navidad.",
+      "type": "white"
+    },
+    {
+      "id": "w_207",
+      "text": "Auto-aversión.",
+      "type": "white"
+    },
+    {
+      "id": "w_208",
+      "text": "Un tumor cerebral.",
+      "type": "white"
+    },
+    {
+      "id": "w_209",
+      "text": "Bebes muertos.",
+      "type": "white"
+    },
+    {
+      "id": "w_210",
+      "text": "Música ranchera.",
+      "type": "white"
+    },
+    {
+      "id": "w_211",
+      "text": "Una detonación termonuclear.",
+      "type": "white"
+    },
+    {
+      "id": "w_212",
+      "text": "Gansos.",
+      "type": "white"
+    },
+    {
+      "id": "w_213",
+      "text": "Luis Jara.",
+      "type": "white"
+    },
+    {
+      "id": "w_214",
+      "text": "Dios.",
+      "type": "white"
+    },
+    {
+      "id": "w_215",
+      "text": "Un nerd espástico.",
+      "type": "white"
+    },
+    {
+      "id": "w_216",
+      "text": "Harry Potter erótico.",
+      "type": "white"
+    },
+    {
+      "id": "w_217",
+      "text": "Niños con cáncer anal.",
+      "type": "white"
+    },
+    {
+      "id": "w_218",
+      "text": "Fantasías con un bombero.",
+      "type": "white"
+    },
+    {
+      "id": "w_219",
+      "text": "El sueño americano.",
+      "type": "white"
+    },
+    {
+      "id": "w_220",
+      "text": "Pubertad.",
+      "type": "white"
+    },
+    {
+      "id": "w_221",
+      "text": "Dulce, dulce venganza.",
+      "type": "white"
+    },
+    {
+      "id": "w_222",
+      "text": "Guiñarle el ojo a gente anciana.",
+      "type": "white"
+    },
+    {
+      "id": "w_223",
+      "text": "Las maravillas de Oriente.",
+      "type": "white"
+    },
+    {
+      "id": "w_224",
+      "text": "Oompa-Loompas.",
+      "type": "white"
+    },
+    {
+      "id": "w_225",
+      "text": "Autentica comida peruana.",
+      "type": "white"
+    },
+    {
+      "id": "w_226",
+      "text": "Preadolescentes.",
+      "type": "white"
+    },
+    {
+      "id": "w_227",
+      "text": "Papelucho.",
+      "type": "white"
+    },
+    {
+      "id": "w_228",
+      "text": "Un vibrador.",
+      "type": "white"
+    },
+    {
+      "id": "w_229",
+      "text": "Disfunción eréctil.",
+      "type": "white"
+    },
+    {
+      "id": "w_230",
+      "text": "Tener anos por ojos.",
+      "type": "white"
+    },
+    {
+      "id": "w_231",
+      "text": "El suave y brillante cuerpo del Guatón Salinas.",
+      "type": "white"
+    },
+    {
+      "id": "w_232",
+      "text": "Solos de saxofón.",
+      "type": "white"
+    },
+    {
+      "id": "w_233",
+      "text": "Minas antipersonales.",
+      "type": "white"
+    },
+    {
+      "id": "w_234",
+      "text": "Quedarse sin semen.",
+      "type": "white"
+    },
+    {
+      "id": "w_235",
+      "text": "Tiempo para mi.",
+      "type": "white"
+    },
+    {
+      "id": "w_236",
+      "text": "La Ley.",
+      "type": "white"
+    },
+    {
+      "id": "w_237",
+      "text": "Arresto ciudadano.",
+      "type": "white"
+    },
+    {
+      "id": "w_238",
+      "text": "El sur'e.",
+      "type": "white"
+    },
+    {
+      "id": "w_239",
+      "text": "Pulgares opuestos.",
+      "type": "white"
+    },
+    {
+      "id": "w_240",
+      "text": "Fantasmas.",
+      "type": "white"
+    },
+    {
+      "id": "w_241",
+      "text": "Alcoholismo.",
+      "type": "white"
+    },
+    {
+      "id": "w_242",
+      "text": "Chistes malos y fuera de lugar acerca del Holocausto.",
+      "type": "white"
+    },
+    {
+      "id": "w_243",
+      "text": "Payas inapropiadas.",
+      "type": "white"
+    },
+    {
+      "id": "w_244",
+      "text": "Amputaciones de guerra.",
+      "type": "white"
+    },
+    {
+      "id": "w_245",
+      "text": "Exactamente lo que esperabas.",
+      "type": "white"
+    },
+    {
+      "id": "w_246",
+      "text": "Una paradoja de viaje en el tiempo.",
+      "type": "white"
+    },
+    {
+      "id": "w_247",
+      "text": "Desodorante AXE.",
+      "type": "white"
+    },
+    {
+      "id": "w_248",
+      "text": "La vida del pirata.",
+      "type": "white"
+    },
+    {
+      "id": "w_249",
+      "text": "Decir «Te amo».",
+      "type": "white"
+    },
+    {
+      "id": "w_250",
+      "text": "Una morena sexy.",
+      "type": "white"
+    },
+    {
+      "id": "w_251",
+      "text": "Ser un maldito hechicero.",
+      "type": "white"
+    },
+    {
+      "id": "w_252",
+      "text": "Ser un león depresivo de zoológico.",
+      "type": "white"
+    },
+    {
+      "id": "w_253",
+      "text": "Un macabro asesinato.",
+      "type": "white"
+    },
+    {
+      "id": "w_254",
+      "text": "Un cóndor con un sombrero.",
+      "type": "white"
+    },
+    {
+      "id": "w_255",
+      "text": "Tirarse un peo y huir del lugar.",
+      "type": "white"
+    },
+    {
+      "id": "w_256",
+      "text": "Un show de apareamiento.",
+      "type": "white"
+    },
+    {
+      "id": "w_257",
+      "text": "El equipo de gimnasia Chino.",
+      "type": "white"
+    },
+    {
+      "id": "w_258",
+      "text": "Fricción.",
+      "type": "white"
+    },
+    {
+      "id": "w_259",
+      "text": "Asiáticos malos para las matemáticas.",
+      "type": "white"
+    },
+    {
+      "id": "w_260",
+      "text": "El miedo en si mismo.",
+      "type": "white"
+    },
+    {
+      "id": "w_261",
+      "text": "Castigos con la correa.",
+      "type": "white"
+    },
+    {
+      "id": "w_262",
+      "text": "Levadura.",
+      "type": "white"
+    },
+    {
+      "id": "w_263",
+      "text": "Cajita Feliz.",
+      "type": "white"
+    },
+    {
+      "id": "w_264",
+      "text": "Lamer cosas para reclamarlas como tuyas.",
+      "type": "white"
+    },
+    {
+      "id": "w_265",
+      "text": "Vikingos.",
+      "type": "white"
+    },
+    {
+      "id": "w_266",
+      "text": "El superhéroe Chocman.",
+      "type": "white"
+    },
+    {
+      "id": "w_267",
+      "text": "Queso caliente.",
+      "type": "white"
+    },
+    {
+      "id": "w_268",
+      "text": "Nicolas Cage.",
+      "type": "white"
+    },
+    {
+      "id": "w_269",
+      "text": "Un condón defectuoso.",
+      "type": "white"
+    },
+    {
+      "id": "w_270",
+      "text": "La inevitable muerte del universo por calentamiento.",
+      "type": "white"
+    },
+    {
+      "id": "w_271",
+      "text": "Unión Demócrata Independiente.",
+      "type": "white"
+    },
+    {
+      "id": "w_272",
+      "text": "Felipe Camiroaga.",
+      "type": "white"
+    },
+    {
+      "id": "w_273",
+      "text": "Porno de tentáculos.",
+      "type": "white"
+    },
+    {
+      "id": "w_274",
+      "text": "Cachalotes.",
+      "type": "white"
+    },
+    {
+      "id": "w_275",
+      "text": "Lady Gaga.",
+      "type": "white"
+    },
+    {
+      "id": "w_276",
+      "text": "La ira de Vladimir Putin.",
+      "type": "white"
+    },
+    {
+      "id": "w_277",
+      "text": "Hoyos de la gloria.",
+      "type": "white"
+    },
+    {
+      "id": "w_278",
+      "text": "Problemas paternales.",
+      "type": "white"
+    },
+    {
+      "id": "w_279",
+      "text": "Un mimo teniendo un infarto.",
+      "type": "white"
+    },
+    {
+      "id": "w_280",
+      "text": "Gente blanca.",
+      "type": "white"
+    },
+    {
+      "id": "w_281",
+      "text": "Un vida de tristeza.",
+      "type": "white"
+    },
+    {
+      "id": "w_282",
+      "text": "Sensual escape de senos.",
+      "type": "white"
+    },
+    {
+      "id": "w_283",
+      "text": "Un océano de problemas.",
+      "type": "white"
+    },
+    {
+      "id": "w_284",
+      "text": "Nazis.",
+      "type": "white"
+    },
+    {
+      "id": "w_285",
+      "text": "Un cooler lleno de órganos.",
+      "type": "white"
+    },
+    {
+      "id": "w_286",
+      "text": "Dar el 110%.",
+      "type": "white"
+    },
+    {
+      "id": "w_287",
+      "text": "Hacerlo por atrás.",
+      "type": "white"
+    },
+    {
+      "id": "w_288",
+      "text": "Arturo Prat.",
+      "type": "white"
+    },
+    {
+      "id": "w_289",
+      "text": "Sostener un niño y tirarle un eructo en la cara.",
+      "type": "white"
+    },
+    {
+      "id": "w_290",
+      "text": "Un montaje de voleibol homoerotico.",
+      "type": "white"
+    },
+    {
+      "id": "w_291",
+      "text": "Cachorros!",
+      "type": "white"
+    },
+    {
+      "id": "w_292",
+      "text": "Alargamiento natural de masculinidad.",
+      "type": "white"
+    },
+    {
+      "id": "w_293",
+      "text": "Gente morena.",
+      "type": "white"
+    },
+    {
+      "id": "w_294",
+      "text": "Dejar caer un candelabro sobre tus enemigos y luego trepar por la cuerda.",
+      "type": "white"
+    },
+    {
+      "id": "w_295",
+      "text": "Sopa demasiado caliente.",
+      "type": "white"
+    },
+    {
+      "id": "w_296",
+      "text": "Sexo con Peter Rock.",
+      "type": "white"
+    },
+    {
+      "id": "w_297",
+      "text": "Inyecciones de hormonas.",
+      "type": "white"
+    },
+    {
+      "id": "w_298",
+      "text": "Sacarlo.",
+      "type": "white"
+    },
+    {
+      "id": "w_299",
+      "text": "El Big Bang.",
+      "type": "white"
+    },
+    {
+      "id": "w_300",
+      "text": "Comprar mercaderías en Superbodega aCuenta.",
+      "type": "white"
+    },
+    {
+      "id": "w_301",
+      "text": "Dar a luz al Anticristo.",
+      "type": "white"
+    },
+    {
+      "id": "w_302",
+      "text": "Oscuras y misteriosas fuerzas fuera de nuestro control.",
+      "type": "white"
+    },
+    {
+      "id": "w_303",
+      "text": "Pancho Reyes.",
+      "type": "white"
+    },
+    {
+      "id": "w_304",
+      "text": "El tigre Tony.",
+      "type": "white"
+    },
+    {
+      "id": "w_305",
+      "text": "Billy y Mike.",
+      "type": "white"
+    },
+    {
+      "id": "w_306",
+      "text": "Sexo oral no recíproco.",
+      "type": "white"
+    },
+    {
+      "id": "w_307",
+      "text": "Raúl Hasbún.",
+      "type": "white"
+    },
+    {
+      "id": "w_308",
+      "text": "Gente guashita rica.",
+      "type": "white"
+    },
+    {
+      "id": "w_309",
+      "text": "Prepucio.",
+      "type": "white"
+    },
+    {
+      "id": "w_310",
+      "text": "Gente sin culo.",
+      "type": "white"
+    },
+    {
+      "id": "w_311",
+      "text": "El milagro de dar a luz.",
+      "type": "white"
+    },
+    {
+      "id": "w_312",
+      "text": "Esperar hasta el matrimonio.",
+      "type": "white"
+    },
+    {
+      "id": "w_313",
+      "text": "Dos enanos cagando en un tarro.",
+      "type": "white"
+    },
+    {
+      "id": "w_314",
+      "text": "Ritalín.",
+      "type": "white"
+    },
+    {
+      "id": "w_315",
+      "text": "Una lamentable masturbación manual.",
+      "type": "white"
+    },
+    {
+      "id": "w_316",
+      "text": "Hacer trampa en las Olimpiadas Especiales.",
+      "type": "white"
+    },
+    {
+      "id": "w_317",
+      "text": "Tejado de vidrio.",
+      "type": "white"
+    },
+    {
+      "id": "w_318",
+      "text": "El guatón Loyola.",
+      "type": "white"
+    },
+    {
+      "id": "w_319",
+      "text": "Miley Cyrus a los 55.",
+      "type": "white"
+    },
+    {
+      "id": "w_320",
+      "text": "Nuestro primer presidente chimpancé.",
+      "type": "white"
+    },
+    {
+      "id": "w_321",
+      "text": "Comenzar a cantar y bailar de la nada.",
+      "type": "white"
+    },
+    {
+      "id": "w_322",
+      "text": "Un pistola de agua llena de pipi de gato.",
+      "type": "white"
+    },
+    {
+      "id": "w_323",
+      "text": "El Metro.",
+      "type": "white"
+    },
+    {
+      "id": "w_324",
+      "text": "Un video casero de Vivi Kreutzberger llorando sobre una cazuela.",
+      "type": "white"
+    },
+    {
+      "id": "w_325",
+      "text": "El pastor Soto.",
+      "type": "white"
+    },
+    {
+      "id": "w_326",
+      "text": "Pantalones extremadamente apretados.",
+      "type": "white"
+    },
+    {
+      "id": "w_327",
+      "text": "Grado 3.",
+      "type": "white"
+    },
+    {
+      "id": "w_328",
+      "text": "Despertar desnudo en medio de la Alameda.",
+      "type": "white"
+    },
+    {
+      "id": "w_329",
+      "text": "El frio, refrescante sabor de Pepsi.",
+      "type": "white"
+    },
+    {
+      "id": "w_330",
+      "text": "Merecer la cuna.",
+      "type": "white"
+    },
+    {
+      "id": "w_331",
+      "text": "Esperanza.",
+      "type": "white"
+    },
+    {
+      "id": "w_332",
+      "text": "Sacarte la polera.",
+      "type": "white"
+    },
+    {
+      "id": "w_333",
+      "text": "Sábanas con peste cristal.",
+      "type": "white"
+    },
+    {
+      "id": "w_334",
+      "text": "Limpieza étnica.",
+      "type": "white"
+    },
+    {
+      "id": "w_335",
+      "text": "Eructo vaginal.",
+      "type": "white"
+    },
+    {
+      "id": "w_336",
+      "text": "Reír sin poder hacer nada al escuchar el genocidio de Ruanda.",
+      "type": "white"
+    },
+    {
+      "id": "w_337",
+      "text": "Volarse demasiado.",
+      "type": "white"
+    },
+    {
+      "id": "w_338",
+      "text": "Selección natural.",
+      "type": "white"
+    },
+    {
+      "id": "w_339",
+      "text": "Un huemul gaseoso.",
+      "type": "white"
+    },
+    {
+      "id": "w_340",
+      "text": "Mi vida sexual.",
+      "type": "white"
+    },
+    {
+      "id": "w_341",
+      "text": "Arnold Schwarzenegger.",
+      "type": "white"
+    },
+    {
+      "id": "w_342",
+      "text": "Pretender que te importa.",
+      "type": "white"
+    },
+    {
+      "id": "w_343",
+      "text": "Ricardo Lagos.",
+      "type": "white"
+    },
+    {
+      "id": "w_344",
+      "text": "La vagina de Pilar Sordo.",
+      "type": "white"
+    },
+    {
+      "id": "w_345",
+      "text": "Una cara fea.",
+      "type": "white"
+    },
+    {
+      "id": "w_346",
+      "text": "Mi negro trasero.",
+      "type": "white"
+    },
+    {
+      "id": "w_347",
+      "text": "Batman!!!",
+      "type": "white"
+    },
+    {
+      "id": "w_348",
+      "text": "Vagabundos.",
+      "type": "white"
+    },
+    {
+      "id": "w_349",
+      "text": "Preguntas racistas de la PSU.",
+      "type": "white"
+    },
+    {
+      "id": "w_350",
+      "text": "Centauros.",
+      "type": "white"
+    },
+    {
+      "id": "w_351",
+      "text": "Una sorpresa salada.",
+      "type": "white"
+    },
+    {
+      "id": "w_352",
+      "text": "72 vírgenes.",
+      "type": "white"
+    },
+    {
+      "id": "w_353",
+      "text": "Células madre embrionarias.",
+      "type": "white"
+    },
+    {
+      "id": "w_354",
+      "text": "Bukkake pixelado.",
+      "type": "white"
+    },
+    {
+      "id": "w_355",
+      "text": "Harakiri.",
+      "type": "white"
+    },
+    {
+      "id": "w_356",
+      "text": "Una lobotomía con un picahielos.",
+      "type": "white"
+    },
+    {
+      "id": "w_357",
+      "text": "Conexión humana genuina.",
+      "type": "white"
+    },
+    {
+      "id": "w_358",
+      "text": "Ira menstrual.",
+      "type": "white"
+    },
+    {
+      "id": "w_359",
+      "text": "Lluvia dorada.",
+      "type": "white"
+    },
+    {
+      "id": "w_360",
+      "text": "Un torrente eterno de diarrea.",
+      "type": "white"
+    },
+    {
+      "id": "w_361",
+      "text": "La carrera de cantante de Iván Zamorano.",
+      "type": "white"
+    },
+    {
+      "id": "w_362",
+      "text": "Accidentes horribles por remoción de vello con laser.",
+      "type": "white"
+    },
+    {
+      "id": "w_363",
+      "text": "Auto canibalismo.",
+      "type": "white"
+    },
+    {
+      "id": "w_364",
+      "text": "Un feto.",
+      "type": "white"
+    },
+    {
+      "id": "w_365",
+      "text": "Cabalgar hacia el ocaso.",
+      "type": "white"
+    },
+    {
+      "id": "w_366",
+      "text": "Goblins.",
+      "type": "white"
+    },
+    {
+      "id": "w_367",
+      "text": "Comerse el ultimo bison.",
+      "type": "white"
+    },
+    {
+      "id": "w_368",
+      "text": "Objetos brillantes.",
+      "type": "white"
+    },
+    {
+      "id": "w_369",
+      "text": "Ser rico.",
+      "type": "white"
+    },
+    {
+      "id": "w_370",
+      "text": "Un emboque.",
+      "type": "white"
+    },
+    {
+      "id": "w_371",
+      "text": "Lepra.",
+      "type": "white"
+    },
+    {
+      "id": "w_372",
+      "text": "Paz mundial.",
+      "type": "white"
+    },
+    {
+      "id": "w_373",
+      "text": "Dedos de mantequilla.",
+      "type": "white"
+    },
+    {
+      "id": "w_374",
+      "text": "Manos de motosierra.",
+      "type": "white"
+    },
+    {
+      "id": "w_375",
+      "text": "La fundacion Make-a-Wish.",
+      "type": "white"
+    },
+    {
+      "id": "w_376",
+      "text": "Aliento a pene.",
+      "type": "white"
+    },
+    {
+      "id": "w_377",
+      "text": "Poner un huevo.",
+      "type": "white"
+    },
+    {
+      "id": "w_378",
+      "text": "La locura del hombre.",
+      "type": "white"
+    },
+    {
+      "id": "w_379",
+      "text": "Mis genitales.",
+      "type": "white"
+    },
+    {
+      "id": "w_380",
+      "text": "La abuela.",
+      "type": "white"
+    },
+    {
+      "id": "w_381",
+      "text": "Bacteria come carne.",
+      "type": "white"
+    },
+    {
+      "id": "w_382",
+      "text": "Gente pobre.",
+      "type": "white"
+    },
+    {
+      "id": "w_383",
+      "text": "50.000 voltios directo a los pezones.",
+      "type": "white"
+    },
+    {
+      "id": "w_384",
+      "text": "Escucha activa.",
+      "type": "white"
+    },
+    {
+      "id": "w_385",
+      "text": "El superhombre.",
+      "type": "white"
+    },
+    {
+      "id": "w_386",
+      "text": "Malas decisiones de vida.",
+      "type": "white"
+    },
+    {
+      "id": "w_387",
+      "text": "Monaguillos.",
+      "type": "white"
+    },
+    {
+      "id": "w_388",
+      "text": "Mi vagina.",
+      "type": "white"
+    },
+    {
+      "id": "w_389",
+      "text": "Pac-Man tragando semen de forma incontrolable.",
+      "type": "white"
+    },
+    {
+      "id": "w_390",
+      "text": "Aspirar pegamento.",
+      "type": "white"
+    },
+    {
+      "id": "w_391",
+      "text": "La placenta.",
+      "type": "white"
+    },
+    {
+      "id": "w_392",
+      "text": "Los profundamente discapacitados.",
+      "type": "white"
+    },
+    {
+      "id": "w_393",
+      "text": "Combustión humana espontanea.",
+      "type": "white"
+    },
+    {
+      "id": "w_394",
+      "text": "El KKK.",
+      "type": "white"
+    },
+    {
+      "id": "w_395",
+      "text": "El clítoris.",
+      "type": "white"
+    },
+    {
+      "id": "w_396",
+      "text": "No usar pantalones.",
+      "type": "white"
+    },
+    {
+      "id": "w_397",
+      "text": "Sexo con consentimiento.",
+      "type": "white"
+    },
+    {
+      "id": "w_398",
+      "text": "Gente negra.",
+      "type": "white"
+    },
+    {
+      "id": "w_399",
+      "text": "Una cubeta de cabezas de pescado.",
+      "type": "white"
+    },
+    {
+      "id": "w_400",
+      "text": "Cuidados terminales.",
+      "type": "white"
+    },
+    {
+      "id": "w_401",
+      "text": "Post-its pasivo agresivos.",
+      "type": "white"
+    },
+    {
+      "id": "w_402",
+      "text": "Whiskas.",
+      "type": "white"
+    },
+    {
+      "id": "w_403",
+      "text": "El corazón de un niño.",
+      "type": "white"
+    },
+    {
+      "id": "w_404",
+      "text": "Migas por toda la maldita alfombra.",
+      "type": "white"
+    },
+    {
+      "id": "w_405",
+      "text": "Tu extraño hermano.",
+      "type": "white"
+    },
+    {
+      "id": "w_406",
+      "text": "Ser gordo y estúpido.",
+      "type": "white"
+    },
+    {
+      "id": "w_407",
+      "text": "Casarse, tener hijos, comprar cosas, retirarse a Valparaíso y morir.",
+      "type": "white"
+    },
+    {
+      "id": "w_408",
+      "text": "Johnny Depp.",
+      "type": "white"
+    },
+    {
+      "id": "w_409",
+      "text": "Leonardo DiCaprio.",
+      "type": "white"
+    },
+    {
+      "id": "w_410",
+      "text": "Esperar un eructo y vomitar en el suelo.",
+      "type": "white"
+    },
+    {
+      "id": "w_411",
+      "text": "Labores de una esposa.",
+      "type": "white"
+    },
+    {
+      "id": "w_412",
+      "text": "Una pirámide de cabezas cercenadas.",
+      "type": "white"
+    },
+    {
+      "id": "w_413",
+      "text": "Genghis Khan.",
+      "type": "white"
+    },
+    {
+      "id": "w_414",
+      "text": "Universidades cota mil.",
+      "type": "white"
+    },
+    {
+      "id": "w_415",
+      "text": "Crucifixión.",
+      "type": "white"
+    },
+    {
+      "id": "w_416",
+      "text": "Una subscripción a Men's Health.",
+      "type": "white"
+    },
+    {
+      "id": "w_417",
+      "text": "El lechero.",
+      "type": "white"
+    },
+    {
+      "id": "w_418",
+      "text": "Fuego aliado.",
+      "type": "white"
+    },
+    {
+      "id": "w_419",
+      "text": "Voto femenino.",
+      "type": "white"
+    },
+    {
+      "id": "w_420",
+      "text": "SIDA.",
+      "type": "white"
+    },
+    {
+      "id": "w_421",
+      "text": "Ex presidente.",
+      "type": "white"
+    },
+    {
+      "id": "w_422",
+      "text": "Onzas de heroína.",
+      "type": "white"
+    },
+    {
+      "id": "w_423",
+      "text": "Preámbulo a poto pelado.",
+      "type": "white"
+    },
+    {
+      "id": "w_424",
+      "text": "Ropa interior comestible.",
+      "type": "white"
+    },
+    {
+      "id": "w_425",
+      "text": "Mi colección de juguetes sexuales de alta tecnología.",
+      "type": "white"
+    },
+    {
+      "id": "w_426",
+      "text": "La Fuerza.",
+      "type": "white"
+    },
+    {
+      "id": "w_427",
+      "text": "Abejas?",
+      "type": "white"
+    },
+    {
+      "id": "w_428",
+      "text": "Algo de maldita paz y tranquilidad.",
+      "type": "white"
+    },
+    {
+      "id": "w_429",
+      "text": "Masturbarse en una piscina llena de lagrimas de niños.",
+      "type": "white"
+    },
+    {
+      "id": "w_430",
+      "text": "Un cerdo enano con un pequeño abrigo y botitas.",
+      "type": "white"
+    },
+    {
+      "id": "w_431",
+      "text": "Tres penes al mismo tiempo.",
+      "type": "white"
+    },
+    {
+      "id": "w_432",
+      "text": "Masturbación.",
+      "type": "white"
+    },
+    {
+      "id": "w_433",
+      "text": "Tom Cruise.",
+      "type": "white"
+    },
+    {
+      "id": "w_434",
+      "text": "Un desayuno balanceado.",
+      "type": "white"
+    },
+    {
+      "id": "w_435",
+      "text": "Cuentas anales.",
+      "type": "white"
+    },
+    {
+      "id": "w_436",
+      "text": "Beber solo.",
+      "type": "white"
+    },
+    {
+      "id": "w_437",
+      "text": "Aborto vía colgador.",
+      "type": "white"
+    },
+    {
+      "id": "w_438",
+      "text": "Calzones usados.",
+      "type": "white"
+    },
+    {
+      "id": "w_439",
+      "text": "Acariciarse.",
+      "type": "white"
+    },
+    {
+      "id": "w_440",
+      "text": "Limpiarle el culo.",
+      "type": "white"
+    },
+    {
+      "id": "w_441",
+      "text": "Mote con huesillos.",
+      "type": "white"
+    },
+    {
+      "id": "w_442",
+      "text": "Un completo al desayuno.",
+      "type": "white"
+    },
+    {
+      "id": "w_443",
+      "text": "La voz de Morgan Freeman.",
+      "type": "white"
+    },
+    {
+      "id": "w_444",
+      "text": "Un hombre de mediana edad en patines.",
+      "type": "white"
+    },
+    {
+      "id": "w_445",
+      "text": "Ghandi.",
+      "type": "white"
+    },
+    {
+      "id": "w_446",
+      "text": "El solo de flauta de «Todos juntos.»",
+      "type": "white"
+    },
+    {
+      "id": "w_447",
+      "text": "Abdominales espectaculares.",
+      "type": "white"
+    },
+    {
+      "id": "w_448",
+      "text": "Keanu Reeves.",
+      "type": "white"
+    },
+    {
+      "id": "w_449",
+      "text": "Rojo Fama contra Fama.",
+      "type": "white"
+    },
+    {
+      "id": "w_450",
+      "text": "Abuso de menores.",
+      "type": "white"
+    },
+    {
+      "id": "w_451",
+      "text": "Lindorfo.",
+      "type": "white"
+    },
+    {
+      "id": "w_452",
+      "text": "Ciencia.",
+      "type": "white"
+    },
+    {
+      "id": "w_453",
+      "text": "Una tribu de mujeres guerreras.",
+      "type": "white"
+    },
+    {
+      "id": "w_454",
+      "text": "Viagra.",
+      "type": "white"
+    },
+    {
+      "id": "w_455",
+      "text": "Su majestad, la reina Elizabeth II.",
+      "type": "white"
+    },
+    {
+      "id": "w_456",
+      "text": "La matanza vía tiroteo del año.",
+      "type": "white"
+    },
+    {
+      "id": "w_457",
+      "text": "Cobrar venganza.",
+      "type": "white"
+    },
+    {
+      "id": "w_458",
+      "text": "Una erección que dura mas de 4 horas.",
+      "type": "white"
+    },
+    {
+      "id": "w_459",
+      "text": "Un shot de tequila caliente.",
+      "type": "white"
+    },
+    {
+      "id": "w_460",
+      "text": "Chayanne en tanga.",
+      "type": "white"
+    },
+    {
+      "id": "w_461",
+      "text": "El удовлетворение de mandar a todos al carajo.",
+      "type": "white"
+    },
+    {
+      "id": "w_462",
+      "text": "Meter la pata hasta el fondo.",
+      "type": "white"
+    },
+    {
+      "id": "w_463",
+      "text": "Comer tacos en la calle a las 4 AM.",
+      "type": "white"
+    },
+    {
+      "id": "w_464",
+      "text": "El SAT tocando a tu puerta.",
+      "type": "white"
+    },
+    {
+      "id": "w_465",
+      "text": "Una bendición no planeada.",
+      "type": "white"
+    },
+    {
+      "id": "w_466",
+      "text": "La chancla voladora de mi mamá.",
+      "type": "white"
+    },
+    {
+      "id": "w_467",
+      "text": "Chabelo inmortal.",
+      "type": "white"
+    },
+    {
+      "id": "w_468",
+      "text": "Un grupo de WhatsApp de la familia a las 6 AM.",
+      "type": "white"
+    },
+    {
+      "id": "w_469",
+      "text": "Llorar en la regadera con rolas de José José.",
+      "type": "white"
+    },
+    {
+      "id": "w_470",
+      "text": "Decir 'la última y nos vamos'.",
+      "type": "white"
+    },
+    {
+      "id": "w_471",
+      "text": "El gansito congelado.",
+      "type": "white"
+    },
+    {
+      "id": "w_472",
+      "text": "Pagar en abonos chiquitos.",
+      "type": "white"
+    },
+    {
+      "id": "w_473",
+      "text": "Gritar '¡Viva México cabrones!'.",
+      "type": "white"
+    },
+    {
+      "id": "w_474",
+      "text": "Vender fotos de patas en OnlyFans.",
+      "type": "white"
+    }
+  ],
+  "blackCards": [
+    {
+      "id": "b_1",
+      "text": "¿Cómo perdí mi virginidad?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_2",
+      "text": "¿Por qué no puedo dormir en las noches?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_3",
+      "text": "¿Qué es ese olor?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_4",
+      "text": "Tengo 99 problemas pero ______ no es uno de ellos.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_5",
+      "text": "Tal vez ella nació con eso. Quizás es ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_6",
+      "text": "¿Cuál es el próximo juguete de la Cajita Feliz?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_7",
+      "text": "Acá está la Iglesia. Acá está el campanario. Abre las puertas y hay un ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_8",
+      "text": "Es una lástima que los niños estos días se estén involucrando con ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_9",
+      "text": "Hoy en el Diario de Eva: ¡Ayuda! ¡Mi hijo es/está ______!",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_10",
+      "text": "La medicina alternativa está valorando los poderes curativos de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_11",
+      "text": "Y el OSCAR a ______ es para ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_12",
+      "text": "¿Qué es ese ruido?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_13",
+      "text": "¿Qué hizo que terminara mi última relación?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_14",
+      "text": "El nuevo reality show tiene como protagonistas a 8 celebridades viviendo con ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_15",
+      "text": "Bebo para olvidar ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_16",
+      "text": "Lo siento profesor, no pude completar mi tarea porque ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_17",
+      "text": "¿Cuál es el placer culpable de Batman?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_18",
+      "text": "Este es el modo en que se acaba el mundo: no con una explosión, sino con ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_19",
+      "text": "¿Cuál es el mejor amigo de una mujer?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_20",
+      "text": "La DGAC ahora prohíbe ______ en los aviones.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_21",
+      "text": "Y así es como quiero morir.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_22",
+      "text": "Para mi siguiente truco, sacaré ______ de ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_23",
+      "text": "En la nueva película original de Disney, Hannah Montana lucha contra ______ por primera vez.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_24",
+      "text": "______ es un camino peligroso que lleva a ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_25",
+      "text": "Lo conseguiré con un poco de ayuda de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_26",
+      "text": "Querida Rosa, estoy teniendo algunos problemas con ______ y me gustaría tu consejo.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_27",
+      "text": "En vez de carbón, el Viejito Pascuero ahora les da ______ a los niños malos.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_28",
+      "text": "¿Qué es lo más emo?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_29",
+      "text": "En 1.000 años cuando el dinero sea un recuerdo distante, ¿con qué pagaremos por bienes y servicios?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_30",
+      "text": "Presentando al increíble dúo de superhéroe y ayudante: ¡Son ______ y ______!",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_31",
+      "text": "En la nueva película de M. Night Shyamalan, Bruce Willis descubre que realmente ha sido ______ todo el tiempo.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_32",
+      "text": "Una romántica cena a la luz de las velas no estaría completa sin ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_33",
+      "text": "¡Apuesto a que no puedes solo con uno!",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_34",
+      "text": "A la gente cuica le gusta ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_35",
+      "text": "Dame esos 5.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_36",
+      "text": "Próximamente de J.K. Rowling: Harry Potter y la Cámara de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_37",
+      "text": "¡Presentando Fútbol Xtreme! Es como el fútbol, pero con ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_38",
+      "text": "En un mundo destrozado por ______, nuestro único consuelo es ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_39",
+      "text": "¡Guerra! ¿Para qué nos sirve?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_40",
+      "text": "Durante el sexo, me gusta pensar en ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_41",
+      "text": "¿Qué me están escondiendo mis padres?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_42",
+      "text": "¿Qué es lo que siempre resulta para acostarte con alguien?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_43",
+      "text": "En Colina 1, se dice que puedes cambiar 200 cigarros por ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_44",
+      "text": "¿Qué me traje de vuelta desde Uruguay?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_45",
+      "text": "¿Qué no te gustaría encontrar en tu pollo mongoliano?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_46",
+      "text": "¿Qué traería de vuelta en el tiempo para convencer a la gente de que soy un poderoso hechicero?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_47",
+      "text": "¿Cómo estoy manteniendo el estado de mi relación?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_48",
+      "text": "¡Es una trampa!",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_49",
+      "text": "Llegando a Broadway esta temporada: ______: El musical.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_50",
+      "text": "Mientras EEUU competía con la URSS en la carrera espacial, el gobierno chileno invirtió millones en la investigación de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_51",
+      "text": "Después del terremoto, Farkas le llevó ______ a la gente de Concepción.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_52",
+      "text": "A continuación en ESPN: La Serie Mundial de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_53",
+      "text": "1° paso: ______ | 2° paso: ______ | 3° paso: ¡Ganancia!",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_54",
+      "text": "Dijeron que estábamos locos. Dijeron que no podíamos meter ______ dentro de ______. Estaban equivocados.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_55",
+      "text": "... Pero antes de matarlo Sr. Bond, debo mostrarle ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_56",
+      "text": "¿Qué me causa pedos incontrolables?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_57",
+      "text": "La nueva Chevrolet Tahoe. Con el poder y espacio para llevar ______ a donde quieras.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_58",
+      "text": "El paseo de curso se arruinó completamente por culpa de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_59",
+      "text": "Cuando el Faraón no cedió, Moisés invocó una plaga de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_60",
+      "text": "¿Cuál es mi poder secreto?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_61",
+      "text": "¿De qué hay una tonelada en el cielo?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_62",
+      "text": "¿Qué cosa encontraría la abuela perturbadora, pero extrañamente encantadora?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_63",
+      "text": "Nunca entendí realmente ______ hasta que encontré ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_64",
+      "text": "¿Qué le entregó la ONU a los niños de Siria vía entrega aérea?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_65",
+      "text": "¿Qué ayuda a Don Francisco a soltar sus gases?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_66",
+      "text": "¿Qué comió Vin Diesel en la cena?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_67",
+      "text": "______: bueno hasta la última gota.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_68",
+      "text": "¿Por qué estoy pegajoso/a?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_69",
+      "text": "¿Qué mejora con los años?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_70",
+      "text": "Probado con niños, aprobado por madres: ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_71",
+      "text": "Papi, ¿por qué está llorando mamá?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_72",
+      "text": "¿Qué están usando los profesores en los colegios de escasos recursos para motivar a sus alumnos?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_73",
+      "text": "Un reciente estudio demuestra que los jóvenes tienen 50% menos sexo luego de ser expuestos a ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_74",
+      "text": "La vida de los indígenas cambió para siempre cuando los españoles les presentaron ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_75",
+      "text": "Haz un Haiku.",
+      "pick": 3,
+      "draw": 2,
+      "type": "black"
+    },
+    {
+      "id": "b_76",
+      "text": "No sé con qué armas se peleará la tercera guerra mundial, pero la cuarta se peleará con ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_77",
+      "text": "¿Por qué me duele todo el cuerpo?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_78",
+      "text": "¿Qué estoy dejando por la Cuaresma?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_79",
+      "text": "¿Sobre qué está pensando Joaquín Lavín en estos momentos?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_80",
+      "text": "El Museo de Historia Natural abrió una exhibición interactiva de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_81",
+      "text": "Cuando sea presidente, crearé el Departamento de ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_82",
+      "text": "Sábado de Reportajes presenta: «______, la historia de ______».",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_83",
+      "text": "Cuando sea un billonario, construiré una estatua de 20 metros conmemorando ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_84",
+      "text": "Cuando estaba en ácido, ______ se transformó en ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_85",
+      "text": "Es cierto, maté a ______. ¿Cómo preguntas? ______.",
+      "pick": 2,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_86",
+      "text": "¿Qué es mi anti-droga?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_87",
+      "text": "______ + ______ = ______.",
+      "pick": 3,
+      "draw": 2,
+      "type": "black"
+    },
+    {
+      "id": "b_88",
+      "text": "¿Qué nunca falla en alegrar la fiesta?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_89",
+      "text": "¿Cuál es la nueva dieta de moda?",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_90",
+      "text": "¡Consejo! Cuando tu pareja te pida que bajes, trata de sorprenderle con ______ en cambio.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_91",
+      "text": "Mi terapeuta dice que la raíz de todos mis traumas es ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_92",
+      "text": "No hay nada más caliente que susurrarle al oído: «______».",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_93",
+      "text": "El verdadero secreto para ganar en la vida no es trabajar duro, es ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_94",
+      "text": "En mi funeral no quiero flores, quiero ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_95",
+      "text": "Cosas que jamás deberías meterte por la nariz: ______.",
+      "pick": 1,
+      "draw": 0,
+      "type": "black"
+    }
+  ]
+}

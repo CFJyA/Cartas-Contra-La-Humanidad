@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Cartas Contra La Humanidad - Multijugador Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <!-- Custom Game Theme -->
+    <link rel="stylesheet" href="~/css/game.css" asp-append-version="true" />
+</head>
+<body>
+    @RenderBody()
+
+    <!-- Core Scripts -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/signalr/signalr.min.js"></script>
+    <script src="~/lib/confetti.browser.min.js"></script>
+    <script src="~/lib/qrcode.min.js"></script>
+    <script src="~/js/sound_engine.js" asp-append-version="true"></script>
+    <script src="~/js/game.js" asp-append-version="true"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

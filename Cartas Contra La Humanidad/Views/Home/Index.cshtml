@@ -1,0 +1,432 @@
+@{
+    ViewData["Title"] = "Cartas Contra La Humanidad";
+}
+
+<div class="app-container">
+    <!-- Game Header Navigation -->
+    <header class="game-header">
+        <div class="brand-title">
+            <span>🃏 Cartas Contra La Humanidad</span>
+            <span class="brand-badge" id="header-room-code">ONLINE</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-cah btn-cah-dark btn-sm" id="btn-toggle-sound" title="Alternar Sonido">
+                🔊 Sonido
+            </button>
+            <button class="btn btn-cah btn-cah-dark btn-sm" id="btn-toggle-chat" title="Abrir Chat de Sala">
+                💬 Chat
+            </button>
+            <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalRules" title="Reglas del Juego">
+                📜 Reglas
+            </button>
+            <button class="btn btn-cah btn-cah-danger btn-sm d-none" id="btn-leave-room" title="Salir de la partida">
+                🚪 Salir
+            </button>
+        </div>
+    </header>
+
+    <!-- SCREEN 1: WELCOME / LANDING -->
+    <section id="screen-welcome" class="hero-box">
+        <h1 class="hero-title">Cartas Contra<br />La Humanidad</h1>
+        <p class="hero-subtitle">El legendario juego de fiesta para gente horrible... ¡bien vrga y multijugador en tiempo real!</p>
+
+        <div class="panel-card text-start">
+            <!-- Player Setup -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Tu Apodo de Juego:</label>
+                <input type="text" id="input-player-name" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="Ej. El Cuma, Don Graf, La Toxica..." maxlength="25" />
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-bold">Elige tu Avatar:</label>
+                <div class="avatar-grid" id="avatar-grid">
+                    <!-- Emojis injected by game.js -->
+                </div>
+            </div>
+
+            <!-- Tab Buttons -->
+            <ul class="nav nav-pills nav-fill mb-3" id="welcome-tabs">
+                <li class="nav-item">
+                    <button class="nav-link welcome-tab-btn active fw-bold" id="tab-btn-create" onclick="showTab('create')">
+                        🔥 Crear Sala Nueva
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link welcome-tab-btn fw-bold text-white" id="tab-btn-join" onclick="showTab('join')">
+                        ⚡ Unirse a Sala
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content: Create Room -->
+            <div id="tab-content-create" class="welcome-tab-content">
+                <div class="row g-3 mb-3">
+                    <div class="col-sm-6">
+                        <label class="form-label small fw-bold text-secondary">Puntos para Ganar:</label>
+                        <select id="select-target-score" class="form-select bg-dark text-white border-secondary">
+                            <option value="5">5 Puntos (Partida Rápida)</option>
+                            <option value="7" selected>7 Puntos (Estándar)</option>
+                            <option value="10">10 Puntos (Larga)</option>
+                            <option value="15">15 Puntos (Maratón)</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="form-label small fw-bold text-secondary">Tiempo por Ronda:</label>
+                        <select id="select-timer-seconds" class="form-select bg-dark text-white border-secondary">
+                            <option value="30">30 Segundos (Frenético)</option>
+                            <option value="60" selected>60 Segundos (Equilibrado)</option>
+                            <option value="90">90 Segundos (Chill)</option>
+                            <option value="0">Sin Límite de Tiempo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-check form-switch mb-4">
+                    <input class="form-check-input" type="checkbox" id="check-rando-bot" checked>
+                    <label class="form-check-label fw-bold" for="check-rando-bot">
+                        Incluir a <em>Rando Cardrissian</em> (Bot fantasma que juega cartas al azar 🤖)
+                    </label>
+                </div>
+
+                <button class="btn btn-cah btn-cah-primary w-100 py-3 fs-5" onclick="createRoom()">
+                    👑 CREAR SALA Y SER EL ANFITRIÓN
+                </button>
+            </div>
+
+            <!-- Tab Content: Join Room -->
+            <div id="tab-content-join" class="welcome-tab-content d-none">
+                <div class="mb-4">
+                    <label class="form-label small fw-bold text-secondary">Código de la Sala:</label>
+                    <input type="text" id="input-join-code" class="form-control form-control-lg bg-dark text-white border-secondary text-uppercase fw-bold text-center letter-spacing-2" placeholder="EJ. VERGA69" maxlength="10" />
+                </div>
+
+                <button class="btn btn-cah btn-cah-primary w-100 py-3 fs-5" onclick="joinRoom()">
+                    🚀 UNIRSE A LA SALA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 2: LOBBY -->
+    <section id="screen-lobby" class="d-none">
+        <div class="lobby-code-box">
+            <span class="text-secondary small fw-bold text-uppercase">Código de tu Sala</span>
+            <div class="room-code-display" id="lobby-room-code">------</div>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+                <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-copy-room-link">
+                    📋 Copiar Enlace Directo
+                </button>
+                <button class="btn btn-cah btn-cah-accent btn-sm" id="btn-show-qr" data-bs-toggle="modal" data-bs-target="#modalQrCode">
+                    📱 Código QR para Celulares
+                </button>
+                <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalCustomCard">
+                    ✍️ Agregar Carta Custom
+                </button>
+            </div>
+            
+            <div class="mt-3 p-2 rounded bg-dark border border-secondary text-start" style="font-size:0.85rem; max-width:580px; width:100%;">
+                <div class="fw-bold text-warning mb-1">📶 Conexión para Celulares / Amigos:</div>
+                <div class="d-flex justify-content-between align-items-center py-1 border-bottom border-secondary">
+                    <span>🔥 <strong>Punto de Acceso Móvil (Hotspot):</strong></span>
+                    <code class="text-warning fs-6">http://@ViewBag.HotspotIp:5012</code>
+                </div>
+                <div class="d-flex justify-content-between align-items-center py-1">
+                    <span>🌐 <strong>Red Wi-Fi estándar:</strong></span>
+                    <code class="text-info fs-6">http://@ViewBag.WifiIp:5012</code>
+                </div>
+                <div class="text-secondary small mt-1">
+                    💡 Si tus amigos se conectan al Punto de Acceso de esta PC, sólo deben abrir el link del Hotspot o escanear el QR.
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-card mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="fw-bold m-0">Jugadores en la Sala (<span id="lobby-player-count"></span>)</h3>
+                <span class="badge bg-secondary">Mínimo 2 jugadores</span>
+            </div>
+
+            <div class="players-grid" id="lobby-players-grid">
+                <!-- Injected by game.js -->
+            </div>
+
+            <!-- Host Actions -->
+            <div id="lobby-host-controls" class="mt-4 pt-3 border-top border-secondary d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <div class="d-flex gap-2">
+                    <button class="btn btn-cah btn-cah-dark" id="btn-add-bot">
+                        🤖 + Agregar Bot Simulador
+                    </button>
+                </div>
+                <button class="btn btn-cah btn-cah-accent fs-5 px-4 py-2" id="btn-start-game">
+                    🚀 INICIAR PARTIDA
+                </button>
+            </div>
+
+            <!-- Non-Host Message -->
+            <div id="lobby-waiting-notice" class="mt-4 text-center text-secondary py-3 d-none">
+                <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                Esperando a que el anfitrión inicie la partida... ¡Prepárense para ser funados!
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 3: IN-GAME ACTIVE -->
+    <section id="screen-game" class="d-none">
+        <!-- Top bar: info, leaderboards, timer -->
+        <div class="game-top-bar">
+            <div class="d-flex align-items-center gap-3">
+                <div class="fw-bold">
+                    Ronda <span class="badge bg-secondary fs-6" id="top-round-number">1</span>
+                </div>
+                <div class="text-secondary small">
+                    Meta: <span class="fw-bold text-white" id="top-target-score">7</span> pts
+                </div>
+                <div class="d-flex align-items-center gap-1 border-start border-secondary ps-3">
+                    <span class="badge-czar">👑 ZAR:</span>
+                    <span id="top-czar-avatar"></span>
+                    <span class="fw-bold" id="top-czar-name">Nombre</span>
+                </div>
+            </div>
+
+            <div class="scoreboard-row" id="top-scoreboard">
+                <!-- Score chips injected here -->
+            </div>
+
+            <div class="timer-box" id="top-timer">
+                ⏱️ 60s
+            </div>
+        </div>
+
+        <!-- Center Stage: Black Card + Active Interaction Area -->
+        <div class="stage-grid">
+            <!-- Active Black Card -->
+            <div id="active-black-card">
+                <!-- Black Card injected here -->
+            </div>
+
+            <!-- State 1: Playing Stage -->
+            <div id="stage-playing" class="play-slots-container">
+                <!-- Czar banner when waiting -->
+                <div id="playing-czar-banner" class="text-center py-4 d-none">
+                    <div style="font-size:3rem; margin-bottom:0.5rem;">👑</div>
+                    <h3 class="fw-bold">ERES EL ZAR DE ESTA RONDA</h3>
+                    <p class="text-secondary">Los otros jugadores están eligiendo sus cartas más atroces. Relájate y espera sus respuestas.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3" id="czar-submission-progress">
+                        <!-- Progress pills injected here -->
+                    </div>
+                </div>
+
+                <!-- Non-Czar playing interaction -->
+                <div id="playing-player-area">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold text-warning" id="playing-instruction">Elige tus cartas de respuesta:</span>
+                        <button class="btn btn-cah btn-cah-primary" id="btn-confirm-play" disabled>
+                            ⚡ Confirmar Jugada
+                        </button>
+                    </div>
+
+                    <div class="slots-grid" id="playing-slots-grid">
+                        <!-- Card slots injected here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- State 2: Judging Stage -->
+            <div id="stage-judging" class="panel-card d-none">
+                <h3 class="fw-bold mb-3" id="judging-status-title">
+                    ⚖️ Juzgando las respuestas...
+                </h3>
+                <div class="submissions-grid" id="judging-submissions-grid">
+                    <!-- Anonymous combos injected here -->
+                </div>
+            </div>
+
+            <!-- State 3: Winner Stage -->
+            <div id="stage-winner" class="panel-card d-none">
+                <div class="winner-banner" id="winner-reveal-banner">
+                    <!-- Winner announcement injected here -->
+                </div>
+                <h4 class="fw-bold mb-3">Combinación Ganadora:</h4>
+                <div class="d-flex flex-wrap gap-3 mb-4" id="winner-card-combo">
+                    <!-- Winning cards injected here -->
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-cah btn-cah-accent fs-5 px-4" id="btn-next-round">
+                        ➡️ Siguiente Ronda
+                    </button>
+                </div>
+            </div>
+
+            <!-- State 4: Game Over Stage -->
+            <div id="stage-gameover" class="panel-card text-center py-5 d-none">
+                <div style="font-size:4rem;">🏆👑🔥</div>
+                <h1 class="hero-title mt-2">¡FIN DE LA PARTIDA!</h1>
+                <p class="hero-subtitle">Hemos encontrado al ser humano más perverso de la mesa:</p>
+
+                <div class="d-flex flex-column align-items-center gap-3 my-4" id="gameover-podium" style="max-width:500px; margin:0 auto;">
+                    <!-- Top 3 podium injected here -->
+                </div>
+
+                <button class="btn btn-cah btn-cah-primary fs-5 px-4 py-2 mt-3" id="btn-restart-game">
+                    🔄 JUGAR OTRA VEZ
+                </button>
+            </div>
+        </div>
+
+        <!-- Player's Hand Section (Cartas Blancas) -->
+        <section id="hand-section" class="hand-section">
+            <div class="hand-header">
+                <div>
+                    <h4 class="fw-bold m-0">Tus Cartas Blancas</h4>
+                    <span class="text-secondary small">Haz clic en una carta para jugarla en la mesa</span>
+                </div>
+                <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalCustomCard">
+                    + Proponer Carta
+                </button>
+            </div>
+
+            <div class="hand-cards-grid" id="hand-cards-grid">
+                <!-- White hand cards injected here -->
+            </div>
+        </section>
+    </section>
+
+    <!-- Floating Reaction Bar (Always available during game) -->
+    <div class="reaction-bar" id="reaction-bar" title="Reacciones en tiempo real">
+        <button class="reaction-btn" data-emoji="😂">😂</button>
+        <button class="reaction-btn" data-emoji="💀">💀</button>
+        <button class="reaction-btn" data-emoji="🔥">🔥</button>
+        <button class="reaction-btn" data-emoji="💩">💩</button>
+        <button class="reaction-btn" data-emoji="🍆">🍆</button>
+        <button class="reaction-btn" data-emoji="👑">👑</button>
+        <button class="reaction-btn" data-emoji="🍅">🍅</button>
+        <button class="reaction-btn" data-emoji="🤡">🤡</button>
+    </div>
+
+    <!-- Floating Reaction Screen Container -->
+    <div class="floating-reaction-container" id="floating-reaction-container"></div>
+
+    <!-- Side Chat Drawer -->
+    <aside class="chat-drawer" id="chat-drawer">
+        <div class="chat-header">
+            <h5 class="fw-bold m-0">💬 Chat de la Sala</h5>
+            <button class="btn-close btn-close-white" id="btn-close-chat"></button>
+        </div>
+        <div class="chat-messages" id="chat-messages-box">
+            <div class="chat-message-bubble chat-system">
+                ¡Bienvenidos a Cartas Contra La Humanidad! Usa este chat para bardear y comentar las jugadas.
+            </div>
+        </div>
+        <div class="chat-input-bar">
+            <input type="text" id="input-chat-text" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Escribe un mensaje..." maxlength="200" />
+            <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-send-chat">Enviar</button>
+        </div>
+    </aside>
+
+    <!-- MODAL: REGLAS OFICIALES -->
+    <div class="modal fade" id="modalRules" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content modal-cah-content">
+                <div class="modal-header modal-cah-header">
+                    <h5 class="modal-title fw-bold">📜 Reglas de Cards Against Humanity</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold text-warning">Reglas básicas</h4>
+                    <p>Para empezar el juego, cada jugador roba <strong>10 Cartas Blancas</strong>.</p>
+                    <p>En cada ronda, un jugador se convierte en el <strong>Zar</strong> y revela una <strong>Carta Negra</strong> con una pregunta o frase para completar.</p>
+                    <p>El resto de los jugadores responde pasando sus Cartas Blancas más graciosas de forma anónima al Zar.</p>
+                    <p>El Zar lee en voz alta todas las combinaciones que se crearon. Para un mejor resultado, el Zar debería releer la Carta Negra antes de cada respuesta. El Zar elige la combinación más graciosa, y el jugador que entregó esa Carta Blanca gana <strong>1 Asombroso Punto</strong>.</p>
+                    <p>Luego de la ronda, un nuevo jugador se convierte en el Zar, y todos roban Cartas Blancas hasta volver a tener 10 en la mano.</p>
+
+                    <hr class="border-secondary my-4" />
+
+                    <h4 class="fw-bold text-warning">Cartas con "ELIGE 2" o "ROBA 2, ELIGE 3"</h4>
+                    <p>Algunas cartas negras requieren 2 o 3 respuestas. Juégalas en el orden en que deben ser leídas para completar la frase.</p>
+
+                    <hr class="border-secondary my-4" />
+
+                    <h4 class="fw-bold text-warning">Reglas de la Casa (Implementadas)</h4>
+                    <ul>
+                        <li><strong>Rando Cardrissian:</strong> En cada ronda, se puede incluir una carta blanca al azar del mazo jugada por un bot imaginario llamado Rando Cardrissian. Si Rando gana el juego, ¡todos los jugadores sufren vergüenza infinita!</li>
+                        <li><strong>Reiniciando el universo:</strong> Puedes cambiar cartas cuando lo desees agregando cartas custom o botando respuestas malas.</li>
+                        <li><strong>Final Feliz (Haiku):</strong> Cuando se juegan cartas de 3 huecos, se forma un poema épico y degenerado estilo haiku.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer modal-cah-footer">
+                    <button type="button" class="btn btn-cah btn-cah-primary" data-bs-dismiss="modal">¡Entendido, a jugar!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: AGREGAR CARTA PERSONALIZADA -->
+    <div class="modal fade" id="modalCustomCard" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-cah-content">
+                <div class="modal-header modal-cah-header">
+                    <h5 class="modal-title fw-bold">✍️ El Taller de Cartas Personalizadas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-secondary small">Crea una carta con un chiste interno de tu grupo para inyectarla inmediatamente al mazo de la partida.</p>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tipo de Carta:</label>
+                        <select id="custom-card-type" class="form-select bg-dark text-white border-secondary">
+                            <option value="white">Carta Blanca (Respuesta)</option>
+                            <option value="black">Carta Negra (Pregunta con ______)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Texto de la Carta:</label>
+                        <textarea id="custom-card-text" class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Ej. El fetiche secreto de [Amigo]..."></textarea>
+                    </div>
+                    <div class="mb-3" id="custom-pick-group">
+                        <label class="form-label small text-secondary">Huecos a rellenar (Solo para cartas negras):</label>
+                        <select id="custom-card-pick" class="form-select bg-dark text-white border-secondary">
+                            <option value="1">1 Carta (Elige 1)</option>
+                            <option value="2">2 Cartas (Elige 2)</option>
+                            <option value="3">3 Cartas (Elige 3)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-cah-footer">
+                    <button type="button" class="btn btn-cah btn-cah-dark" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-cah btn-cah-primary" id="btn-save-custom-card">Inyectar Carta al Mazo</button>
+                </div>
+            </div>
+        </div>
+    <!-- MODAL: CÓDIGO QR PARA CELULARES -->
+    <div class="modal fade" id="modalQrCode" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content modal-cah-content text-center">
+                <div class="modal-header modal-cah-header">
+                    <h5 class="modal-title fw-bold">📱 Escanea para Jugar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 d-flex flex-column align-items-center">
+                    <div id="qrcode-container" class="p-3 bg-white rounded shadow mb-3"></div>
+                    <p class="small text-secondary m-0">Apunta con la cámara de tu celular conectado al Punto de Acceso para entrar automáticamente.</p>
+                    <code id="qr-target-url" class="mt-2 text-warning small text-break"></code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.cah_hotspotHost = "@ViewBag.HotspotIp:5012";
+        window.cah_wifiHost = "@ViewBag.WifiIp:5012";
+    </script>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 10000;">
+        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body fs-6 fw-bold" id="toast-body">
+                    Notificación
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+</div>
