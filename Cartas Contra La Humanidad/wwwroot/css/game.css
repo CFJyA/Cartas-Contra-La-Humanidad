@@ -716,3 +716,240 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #4b5563;
 }
+
+/* ===========================
+   Fullscreen Overlays
+   (Game in progress / Disconnected)
+   =========================== */
+.fullscreen-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(6px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.overlay-box {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+}
+
+/* ===========================
+   Mobile Responsive Improvements
+   =========================== */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .game-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .brand-title {
+        font-size: 1rem;
+    }
+
+    .game-header > div:last-child {
+        gap: 0.35rem;
+    }
+
+    .game-header .btn-sm {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .panel-card {
+        padding: 1.25rem 1rem;
+    }
+
+    /* Game top bar: stack vertically on small screens */
+    .game-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        padding: 0.6rem 0.9rem;
+    }
+
+    .scoreboard-row {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+    }
+
+    .player-score-chip {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .timer-box {
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+
+    /* Cards: smaller on mobile */
+    .card-black,
+    .card-white {
+        min-height: 160px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    /* Stage grid: always 1 column */
+    .stage-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    /* Hand cards: 2 per row on mobile */
+    .hand-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .card-white {
+        min-height: 160px;
+    }
+
+    /* Submissions: 1 or 2 per row */
+    .submissions-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem;
+    }
+
+    /* Slots: stack vertically */
+    .slots-grid {
+        flex-direction: column;
+        gap: 0.75rem;
+        min-height: auto;
+    }
+
+    .card-slot {
+        min-width: auto;
+        max-width: 100%;
+        min-height: 140px;
+    }
+
+    /* Lobby player grid: 1 column */
+    .players-grid {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    /* Player card in lobby: smaller */
+    .player-lobby-card {
+        padding: 0.65rem 0.75rem;
+    }
+
+    .player-avatar-circle {
+        font-size: 1.3rem;
+        width: 36px;
+        height: 36px;
+    }
+
+    .room-code-display {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+
+    /* Reaction bar: smaller buttons */
+    .reaction-bar {
+        padding: 4px 10px;
+        gap: 6px;
+        bottom: 0.5rem;
+    }
+
+    .reaction-btn {
+        font-size: 1.2rem;
+    }
+
+    /* Lobby host controls: stack */
+    #lobby-host-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #lobby-host-controls .d-flex {
+        width: 100%;
+    }
+
+    #btn-start-game {
+        width: 100%;
+    }
+
+    /* Winner banner: smaller fonts */
+    .winner-banner h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Lobby code box */
+    .lobby-code-box .d-flex.flex-wrap {
+        gap: 0.4rem;
+    }
+
+    .lobby-code-box .btn-sm {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hand-cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .card-white {
+        min-height: 140px;
+        padding: 0.85rem 0.75rem;
+    }
+
+    .card-black {
+        min-height: 140px;
+    }
+
+    .card-text {
+        font-size: 0.82rem;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .reaction-bar {
+        gap: 4px;
+        padding: 4px 8px;
+    }
+
+    .reaction-btn {
+        font-size: 1.05rem;
+    }
+}
+

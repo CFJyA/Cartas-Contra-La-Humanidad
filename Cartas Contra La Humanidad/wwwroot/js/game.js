@@ -89,6 +89,22 @@
             }
         });
 
+        // Host kicked this player
+        connection.on("YouWereKicked", () => {
+            sessionStorage.removeItem('cah_active_room');
+            currentRoom = null;
+            showScreen('welcome');
+            showToast("😤 Has sido expulsado de la sala por el anfitrión.", "danger");
+        });
+
+        // Room closed because only 1 player left
+        connection.on("RoomClosed", (reason) => {
+            sessionStorage.removeItem('cah_active_room');
+            currentRoom = null;
+            showScreen('welcome');
+            showToast("🚪 " + reason, "warning");
+        });
+
         connection.start().then(() => {
             console.log("Conectado a SignalR Hub");
             // Auto-reconnect to room if present in session
@@ -108,7 +124,16 @@
                 joinRoom(savedRoom, true);
             }
         });
+
+        connection.onclose(() => {
+            // Only show the reconnect prompt if player was in a game
+            const savedRoom = sessionStorage.getItem('cah_active_room');
+            if (savedRoom && currentRoom) {
+                showDisconnectedOverlay();
+            }
+        });
     }
+
 
     function setupEventListeners() {
         // Toggle Audio
@@ -232,7 +257,6 @@
         }
     }
 
-    // Public room actions
     window.createRoom = function () {
         const name = getPlayerName();
         if (!name) return;
@@ -261,6 +285,18 @@
             });
     };
 
+    // Navigate back to the welcome screen (logo click)
+    window.goToLobby = function () {
+        if (currentRoom) {
+            if (!confirm("¿Deseas salir de la sala y volver al inicio?")) return;
+            sessionStorage.removeItem('cah_active_room');
+            if (connection) connection.invoke("LeaveRoom").catch(() => {});
+            currentRoom = null;
+        }
+        showScreen('welcome');
+    };
+
+
     window.joinRoom = function (codeOverride, silent = false) {
         const name = getPlayerName();
         if (!name) return;
@@ -285,6 +321,10 @@
                     localStorage.setItem('cah_playerId', myPlayerId);
                     sessionStorage.setItem('cah_active_room', res.roomCode);
                     if (window.soundEngine) window.soundEngine.playCardClick();
+                } else if (res.message === 'gameInProgress') {
+                    // Game already started — show waiting screen
+                    sessionStorage.removeItem('cah_active_room');
+                    showGameInProgressOverlay(code);
                 } else {
                     if (!silent) showToast(res.message, "danger");
                     sessionStorage.removeItem('cah_active_room');
@@ -306,6 +346,66 @@
             showScreen('welcome');
         }
     }
+
+    // Shows an overlay when a player tries to join a game already in progress
+    function showGameInProgressOverlay(code) {
+        let overlay = document.getElementById('overlay-game-in-progress');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'overlay-game-in-progress';
+            overlay.className = 'fullscreen-overlay';
+            overlay.innerHTML = `
+                <div class="overlay-box">
+                    <div style="font-size:3rem;">⏳</div>
+                    <h2 class="fw-bold mt-3">Juego en Progreso</h2>
+                    <p class="text-secondary">La partida ya comenzó. Por favor espera a que termine esta ronda o la partida completa.</p>
+                    <p class="badge bg-secondary fs-6">${code}</p>
+                    <button class="btn btn-cah btn-cah-primary mt-3" onclick="document.getElementById('overlay-game-in-progress').remove(); showScreen('welcome');">
+                        🏠 Volver al Lobby
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+        overlay.style.display = 'flex';
+        showScreen('welcome');
+    }
+
+    // Shows an overlay when the connection drops unexpectedly
+    function showDisconnectedOverlay() {
+        let overlay = document.getElementById('overlay-disconnected');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'overlay-disconnected';
+            overlay.className = 'fullscreen-overlay';
+            overlay.innerHTML = `
+                <div class="overlay-box">
+                    <div style="font-size:3rem;">🔌</div>
+                    <h2 class="fw-bold mt-3">Te has desconectado</h2>
+                    <p class="text-secondary">Se perdió la conexión con el servidor del juego.</p>
+                    <div class="d-flex gap-3 mt-3 justify-content-center flex-wrap">
+                        <button class="btn btn-cah btn-cah-primary" id="btn-reconnect-overlay">
+                            🔄 Reconectarme
+                        </button>
+                        <button class="btn btn-cah btn-cah-dark" onclick="document.getElementById('overlay-disconnected').remove(); sessionStorage.removeItem('cah_active_room'); currentRoom = null; showScreen('welcome');">
+                            🏠 Volver al Lobby
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+
+            document.getElementById('btn-reconnect-overlay').onclick = () => {
+                overlay.remove();
+                const savedRoom = sessionStorage.getItem('cah_active_room');
+                if (savedRoom && myPlayerId) {
+                    joinRoom(savedRoom, true);
+                }
+            };
+        }
+        overlay.style.display = 'flex';
+    }
+
 
     function getPlayerName() {
         const input = document.getElementById('input-player-name');
@@ -388,6 +488,10 @@
     function renderLobby(room) {
         document.getElementById('lobby-room-code').textContent = room.code;
 
+        // Update player count
+        const countEl = document.getElementById('lobby-player-count');
+        if (countEl) countEl.textContent = room.players.filter(p => !p.isBot).length + (room.players.filter(p => p.isBot).length > 0 ? ` + ${room.players.filter(p => p.isBot).length} bots` : '');
+
         // Render player list
         const grid = document.getElementById('lobby-players-grid');
         grid.innerHTML = '';
@@ -395,6 +499,9 @@
         room.players.forEach(p => {
             const card = document.createElement('div');
             card.className = 'player-lobby-card';
+
+            const canKick = room.amIHost && !p.isHost && !p.isBot && p.id !== myPlayerId;
+
             card.innerHTML = `
                 <div class="player-avatar-circle">${p.avatar}</div>
                 <div style="flex:1; min-width:0;">
@@ -403,9 +510,11 @@
                         ${p.isHost ? '<span class="badge-host">👑 Anfitrión</span>' : ''}
                         ${p.isBot ? '<span class="badge-czar">🤖 Bot</span>' : ''}
                         ${p.id === myPlayerId ? '<span class="badge bg-secondary" style="font-size:0.65rem;">Tú</span>' : ''}
+                        ${!p.isConnected ? '<span class="badge bg-danger" style="font-size:0.65rem;">❌ Desconectado</span>' : ''}
                     </div>
                 </div>
                 ${(room.amIHost && p.isBot) ? `<button class="btn btn-sm btn-outline-danger" title="Eliminar Bot" onclick="removeBot('${p.id}')">✕</button>` : ''}
+                ${canKick ? `<button class="btn btn-sm btn-outline-warning ms-1" title="Expulsar jugador" onclick="kickPlayer('${p.id}')">🚪</button>` : ''}
             `;
             grid.appendChild(card);
         });
@@ -436,6 +545,15 @@
     window.removeBot = function (botId) {
         if (connection) connection.invoke("RemoveBot", botId);
     };
+
+    window.kickPlayer = function (targetId) {
+        if (connection) {
+            if (confirm("¿Expulsar a este jugador de la sala?")) {
+                connection.invoke("KickPlayer", targetId);
+            }
+        }
+    };
+
 
     // Game Renderer
     function renderGame(room) {

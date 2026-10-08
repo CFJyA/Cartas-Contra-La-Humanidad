@@ -30,6 +30,10 @@ public class GameManager
         _tickTimer = new Timer(OnTick, null, 1000, 1000);
     }
 
+    /// <summary>Exposes the hub clients so GameHub can send targeted events (e.g. RoomClosed).</summary>
+    public IHubClients Clients => _hubContext.Clients;
+
+
     public GameRoom CreateRoom(string hostPlayerName, string avatar, int targetScore, int timerSeconds, bool randoBot)
     {
         var code = GenerateRoomCode();

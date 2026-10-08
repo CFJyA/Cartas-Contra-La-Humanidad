@@ -66,12 +66,15 @@ public class GameRoom
         }
     }
 
-    public void RemovePlayer(string playerId)
+    /// <summary>
+    /// Removes a player. Returns true if the room should be closed (only 1 human left mid-game).
+    /// </summary>
+    public bool RemovePlayer(string playerId)
     {
         lock (_lock)
         {
             var p = Players.FirstOrDefault(x => x.Id == playerId);
-            if (p == null) return;
+            if (p == null) return false;
 
             p.IsConnected = false;
 
@@ -94,17 +97,50 @@ public class GameRoom
             {
                 ElectNewCzar();
             }
+
+            // If only 1 human remains during an active game, the room should close
+            var remainingHumans = Players.Count(x => x.IsConnected && !x.IsBot);
+            if (remainingHumans <= 1 && State != "Lobby")
+            {
+                return true; // Signal to close the room
+            }
+
+            return false;
+        }
+    }
+
+    /// <summary>
+    /// Allows the host to kick a player by their ID.
+    /// </summary>
+    public bool KickPlayer(string kickerId, string targetId)
+    {
+        lock (_lock)
+        {
+            var kicker = GetPlayer(kickerId);
+            if (kicker == null || !kicker.IsHost) return false;
+
+            var target = GetPlayer(targetId);
+            if (target == null || target.IsHost || target.IsBot) return false;
+
+            target.IsConnected = false;
+            if (State == "Lobby")
+            {
+                Players.Remove(target);
+            }
+
+            return true;
         }
     }
 
     public void ElectNewCzar()
     {
-        var activeHumanOrBots = Players.Where(x => x.IsConnected).ToList();
-        if (activeHumanOrBots.Count == 0) return;
+        // Bots cannot be Czar — only human players
+        var eligiblePlayers = Players.Where(x => x.IsConnected && !x.IsBot).ToList();
+        if (eligiblePlayers.Count == 0) return;
 
         foreach (var pl in Players) pl.IsCzar = false;
-        CurrentCzarIndex = (CurrentCzarIndex + 1) % activeHumanOrBots.Count;
-        activeHumanOrBots[CurrentCzarIndex].IsCzar = true;
+        CurrentCzarIndex = (CurrentCzarIndex + 1) % eligiblePlayers.Count;
+        eligiblePlayers[CurrentCzarIndex].IsCzar = true;
     }
 
     public bool StartGame(List<Card> initialWhiteCards, List<Card> initialBlackCards)
@@ -159,8 +195,8 @@ public class GameRoom
                 }
             }
 
-            // Rotate Czar
-            var activePlayers = Players.Where(p => p.IsConnected).ToList();
+            // Rotate Czar — bots cannot be Czar
+            var activePlayers = Players.Where(p => p.IsConnected && !p.IsBot).ToList();
             if (activePlayers.Count == 0) return;
 
             foreach (var pl in Players) pl.IsCzar = false;

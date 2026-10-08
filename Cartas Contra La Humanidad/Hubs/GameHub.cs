@@ -22,7 +22,6 @@ public class GameHub : Hub
         _gameManager.RegisterConnection(Context.ConnectionId, room.Code, host.Id);
         await Groups.AddToGroupAsync(Context.ConnectionId, room.Code);
 
-        // Broadcast room state
         await _gameManager.BroadcastRoomStateAsync(room);
 
         return new
@@ -57,7 +56,7 @@ public class GameHub : Hub
 
             if (player != null)
             {
-                // Reconnecting existing player
+                // Reconnecting existing player — always allowed
                 player.ConnectionId = Context.ConnectionId;
                 player.IsConnected = true;
                 if (!string.IsNullOrWhiteSpace(playerName)) player.Name = playerName.Trim();
@@ -65,7 +64,13 @@ public class GameHub : Hub
             }
             else
             {
-                // New player joining
+                // New player trying to join — block if game is already active
+                if (room.State != "Lobby")
+                {
+                    return new { success = false, message = "gameInProgress" };
+                }
+
+                // New player joining lobby
                 player = new Player
                 {
                     Id = Guid.NewGuid().ToString("N"),
@@ -158,7 +163,6 @@ public class GameHub : Hub
             var player = room.GetPlayer(info.Value.playerId);
             if (player == null) return;
 
-            // Host or Czar can trigger next round
             if (room.State is "RoundResults")
             {
                 room.StartNewRound();
@@ -208,6 +212,40 @@ public class GameHub : Hub
         }
 
         await _gameManager.BroadcastRoomStateAsync(room);
+    }
+
+    /// <summary>
+    /// Host kicks a player out of the room. The kicked player receives a "YouWereKicked" event.
+    /// </summary>
+    public async Task KickPlayer(string targetPlayerId)
+    {
+        var info = _gameManager.GetConnectionInfo(Context.ConnectionId);
+        if (info == null) return;
+
+        var room = _gameManager.GetRoom(info.Value.roomCode);
+        if (room == null) return;
+
+        string? targetConnectionId = null;
+        bool kicked;
+
+        lock (room.SyncLock)
+        {
+            var target = room.GetPlayer(targetPlayerId);
+            targetConnectionId = target?.ConnectionId;
+            kicked = room.KickPlayer(info.Value.playerId, targetPlayerId);
+        }
+
+        if (kicked)
+        {
+            if (!string.IsNullOrEmpty(targetConnectionId))
+            {
+                await Clients.Client(targetConnectionId).SendAsync("YouWereKicked");
+                await Groups.RemoveFromGroupAsync(targetConnectionId, room.Code);
+                _gameManager.UnregisterConnection(targetConnectionId);
+            }
+
+            await _gameManager.BroadcastRoomStateAsync(room);
+        }
     }
 
     public async Task SendChat(string message)
@@ -310,8 +348,17 @@ public class GameHub : Hub
             var room = _gameManager.GetRoom(info.Value.roomCode);
             if (room != null)
             {
-                room.RemovePlayer(info.Value.playerId);
-                await _gameManager.BroadcastRoomStateAsync(room);
+                bool shouldClose = room.RemovePlayer(info.Value.playerId);
+
+                if (shouldClose)
+                {
+                    // Only 1 human left mid-game — notify all to go back to lobby
+                    await _gameManager.Clients.Group(room.Code).SendAsync("RoomClosed", "Quedó solo un jugador. La sala se ha cerrado.");
+                }
+                else
+                {
+                    await _gameManager.BroadcastRoomStateAsync(room);
+                }
             }
             _gameManager.UnregisterConnection(Context.ConnectionId);
         }
