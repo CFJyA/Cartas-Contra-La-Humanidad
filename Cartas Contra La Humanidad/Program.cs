@@ -1,5 +1,6 @@
 using Cartas_Contra_La_Humanidad.Hubs;
 using Cartas_Contra_La_Humanidad.Services;
+using Microsoft.Azure.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddSignalR(options =>
 
 builder.Services.AddSingleton<CardRepository>();
 builder.Services.AddSingleton<GameManager>();
+builder.Services.AddSignalR().AddAzureSignalR(builder.Configuration["Azure:SignalR:ConnectionString"]!);
 
 var app = builder.Build();
 

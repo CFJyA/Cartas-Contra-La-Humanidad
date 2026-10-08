@@ -7,4 +7,9 @@
     <RootNamespace>Cartas_Contra_La_Humanidad</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="Microsoft.Azure.SignalR" Version="1.33.1" />
+  </ItemGroup>
+
 </Project>
