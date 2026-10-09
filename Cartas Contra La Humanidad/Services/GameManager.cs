@@ -172,7 +172,7 @@ public class GameManager
                         if (room.ActiveBlackCard != null)
                         {
                             var pickCount = room.ActiveBlackCard.Pick;
-                            var pendingPlayers = room.Players.Where(p => !p.IsCzar && p.IsConnected && !p.HasSubmitted).ToList();
+                            var pendingPlayers = room.Players.Where(p => !p.IsCzar && p.IsConnected && !p.HasSubmitted && !p.IsSpectator).ToList();
 
                             foreach (var p in pendingPlayers)
                             {

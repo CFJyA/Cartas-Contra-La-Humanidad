@@ -34,7 +34,7 @@
             <!-- Player Setup -->
             <div class="mb-4">
                 <label class="form-label fw-bold">Tu Apodo de Juego:</label>
-                <input type="text" id="input-player-name" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="Ej. El Cuma, Don Graf, La Toxica..." maxlength="25" />
+                <input type="text" id="input-player-name" class="form-control form-control-lg bg-light text-dark border-dark" placeholder="Ej. El Cuma, Don Graf, La Toxica..." maxlength="25" />
             </div>
 
             <div class="mb-4">
@@ -52,7 +52,7 @@
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link welcome-tab-btn fw-bold text-white" id="tab-btn-join" onclick="showTab('join')">
+                    <button class="nav-link welcome-tab-btn fw-bold text-dark" id="tab-btn-join" onclick="showTab('join')">
                         ⚡ Unirse a Sala
                     </button>
                 </li>
@@ -62,8 +62,8 @@
             <div id="tab-content-create" class="welcome-tab-content">
                 <div class="row g-3 mb-3">
                     <div class="col-sm-6">
-                        <label class="form-label small fw-bold text-secondary">Puntos para Ganar:</label>
-                        <select id="select-target-score" class="form-select bg-dark text-white border-secondary">
+                        <label class="form-label small fw-bold text-muted">Puntos para Ganar:</label>
+                        <select id="select-target-score" class="form-select bg-light text-dark border-dark">
                             <option value="5">5 Puntos (Partida Rápida)</option>
                             <option value="7" selected>7 Puntos (Estándar)</option>
                             <option value="10">10 Puntos (Larga)</option>
@@ -71,8 +71,8 @@
                         </select>
                     </div>
                     <div class="col-sm-6">
-                        <label class="form-label small fw-bold text-secondary">Tiempo por Ronda:</label>
-                        <select id="select-timer-seconds" class="form-select bg-dark text-white border-secondary">
+                        <label class="form-label small fw-bold text-muted">Tiempo por Ronda:</label>
+                        <select id="select-timer-seconds" class="form-select bg-light text-dark border-dark">
                             <option value="30">30 Segundos (Frenético)</option>
                             <option value="60" selected>60 Segundos (Equilibrado)</option>
                             <option value="90">90 Segundos (Chill)</option>
@@ -96,8 +96,8 @@
             <!-- Tab Content: Join Room -->
             <div id="tab-content-join" class="welcome-tab-content d-none">
                 <div class="mb-4">
-                    <label class="form-label small fw-bold text-secondary">Código de la Sala:</label>
-                    <input type="text" id="input-join-code" class="form-control form-control-lg bg-dark text-white border-secondary text-uppercase fw-bold text-center letter-spacing-2" placeholder="EJ. VERGA69" maxlength="10" />
+                    <label class="form-label small fw-bold text-muted">Código de la Sala:</label>
+                    <input type="text" id="input-join-code" class="form-control form-control-lg bg-light text-dark border-dark text-uppercase fw-bold text-center letter-spacing-2" placeholder="EJ. VERGA69" maxlength="10" />
                 </div>
 
                 <button class="btn btn-cah btn-cah-primary w-100 py-3 fs-5" onclick="joinRoom()">
@@ -110,33 +110,15 @@
     <!-- SCREEN 2: LOBBY -->
     <section id="screen-lobby" class="d-none">
         <div class="lobby-code-box">
-            <span class="text-secondary small fw-bold text-uppercase">Código de tu Sala</span>
+            <span class="text-muted small fw-bold text-uppercase">Código de tu Sala</span>
             <div class="room-code-display" id="lobby-room-code">------</div>
             <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
                 <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-copy-room-link">
                     📋 Copiar Enlace Directo
                 </button>
-                <button class="btn btn-cah btn-cah-accent btn-sm" id="btn-show-qr" data-bs-toggle="modal" data-bs-target="#modalQrCode">
-                    📱 Código QR para Celulares
-                </button>
                 <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalCustomCard">
                     ✍️ Agregar Carta Custom
                 </button>
-            </div>
-            
-            <div class="mt-3 p-2 rounded bg-dark border border-secondary text-start" style="font-size:0.85rem; max-width:580px; width:100%;">
-                <div class="fw-bold text-warning mb-1">📶 Conexión para Celulares / Amigos:</div>
-                <div class="d-flex justify-content-between align-items-center py-1 border-bottom border-secondary">
-                    <span>🔥 <strong>Punto de Acceso Móvil (Hotspot):</strong></span>
-                    <code class="text-warning fs-6">http://@ViewBag.HotspotIp:5012</code>
-                </div>
-                <div class="d-flex justify-content-between align-items-center py-1">
-                    <span>🌐 <strong>Red Wi-Fi estándar:</strong></span>
-                    <code class="text-info fs-6">http://@ViewBag.WifiIp:5012</code>
-                </div>
-                <div class="text-secondary small mt-1">
-                    💡 Si tus amigos se conectan al Punto de Acceso de esta PC, sólo deben abrir el link del Hotspot o escanear el QR.
-                </div>
             </div>
         </div>
 
@@ -151,7 +133,7 @@
             </div>
 
             <!-- Host Actions -->
-            <div id="lobby-host-controls" class="mt-4 pt-3 border-top border-secondary d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div id="lobby-host-controls" class="mt-4 pt-3 border-top border-dark d-flex flex-wrap justify-content-between align-items-center gap-3">
                 <div class="d-flex gap-2">
                     <button class="btn btn-cah btn-cah-dark" id="btn-add-bot">
                         🤖 + Agregar Bot Simulador
@@ -163,7 +145,7 @@
             </div>
 
             <!-- Non-Host Message -->
-            <div id="lobby-waiting-notice" class="mt-4 text-center text-secondary py-3 d-none">
+            <div id="lobby-waiting-notice" class="mt-4 text-center text-muted py-3 d-none">
                 <div class="spinner-border spinner-border-sm me-2" role="status"></div>
                 Esperando a que el anfitrión inicie la partida... ¡Prepárense para ser funados!
             </div>
@@ -178,10 +160,10 @@
                 <div class="fw-bold">
                     Ronda <span class="badge bg-secondary fs-6" id="top-round-number">1</span>
                 </div>
-                <div class="text-secondary small">
-                    Meta: <span class="fw-bold text-white" id="top-target-score">7</span> pts
+                <div class="text-muted small">
+                    Meta: <span class="fw-bold text-dark" id="top-target-score">7</span> pts
                 </div>
-                <div class="d-flex align-items-center gap-1 border-start border-secondary ps-3">
+                <div class="d-flex align-items-center gap-1 border-start border-dark ps-3">
                     <span class="badge-czar">👑 ZAR:</span>
                     <span id="top-czar-avatar"></span>
                     <span class="fw-bold" id="top-czar-name">Nombre</span>
@@ -210,7 +192,7 @@
                 <div id="playing-czar-banner" class="text-center py-4 d-none">
                     <div style="font-size:3rem; margin-bottom:0.5rem;">👑</div>
                     <h3 class="fw-bold">ERES EL ZAR DE ESTA RONDA</h3>
-                    <p class="text-secondary">Los otros jugadores están eligiendo sus cartas más atroces. Relájate y espera sus respuestas.</p>
+                    <p class="text-muted">Los otros jugadores están eligiendo sus cartas más atroces. Relájate y espera sus respuestas.</p>
                     <div class="d-flex flex-wrap justify-content-center gap-2 mt-3" id="czar-submission-progress">
                         <!-- Progress pills injected here -->
                     </div>
@@ -281,7 +263,7 @@
             <div class="hand-header">
                 <div>
                     <h4 class="fw-bold m-0">Tus Cartas Blancas</h4>
-                    <span class="text-secondary small">Haz clic en una carta para jugarla en la mesa</span>
+                    <span class="text-muted small">Haz clic en una carta para jugarla en la mesa</span>
                 </div>
                 <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalCustomCard">
                     + Proponer Carta
@@ -321,7 +303,7 @@
             </div>
         </div>
         <div class="chat-input-bar">
-            <input type="text" id="input-chat-text" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Escribe un mensaje..." maxlength="200" />
+            <input type="text" id="input-chat-text" class="form-control form-control-sm bg-light text-dark border-dark" placeholder="Escribe un mensaje..." maxlength="200" />
             <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-send-chat">Enviar</button>
         </div>
     </aside>
@@ -342,12 +324,12 @@
                     <p>El Zar lee en voz alta todas las combinaciones que se crearon. Para un mejor resultado, el Zar debería releer la Carta Negra antes de cada respuesta. El Zar elige la combinación más graciosa, y el jugador que entregó esa Carta Blanca gana <strong>1 Asombroso Punto</strong>.</p>
                     <p>Luego de la ronda, un nuevo jugador se convierte en el Zar, y todos roban Cartas Blancas hasta volver a tener 10 en la mano.</p>
 
-                    <hr class="border-secondary my-4" />
+                    <hr class="border-dark my-4" />
 
                     <h4 class="fw-bold text-warning">Cartas con "ELIGE 2" o "ROBA 2, ELIGE 3"</h4>
                     <p>Algunas cartas negras requieren 2 o 3 respuestas. Juégalas en el orden en que deben ser leídas para completar la frase.</p>
 
-                    <hr class="border-secondary my-4" />
+                    <hr class="border-dark my-4" />
 
                     <h4 class="fw-bold text-warning">Reglas de la Casa (Implementadas)</h4>
                     <ul>
@@ -372,21 +354,21 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <p class="text-secondary small">Crea una carta con un chiste interno de tu grupo para inyectarla inmediatamente al mazo de la partida.</p>
+                    <p class="text-muted small">Crea una carta con un chiste interno de tu grupo para inyectarla inmediatamente al mazo de la partida.</p>
                     <div class="mb-3">
                         <label class="form-label fw-bold">Tipo de Carta:</label>
-                        <select id="custom-card-type" class="form-select bg-dark text-white border-secondary">
+                        <select id="custom-card-type" class="form-select bg-light text-dark border-dark">
                             <option value="white">Carta Blanca (Respuesta)</option>
                             <option value="black">Carta Negra (Pregunta con ______)</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">Texto de la Carta:</label>
-                        <textarea id="custom-card-text" class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Ej. El fetiche secreto de [Amigo]..."></textarea>
+                        <textarea id="custom-card-text" class="form-control bg-light text-dark border-dark" rows="3" placeholder="Ej. El fetiche secreto de [Amigo]..."></textarea>
                     </div>
                     <div class="mb-3" id="custom-pick-group">
-                        <label class="form-label small text-secondary">Huecos a rellenar (Solo para cartas negras):</label>
-                        <select id="custom-card-pick" class="form-select bg-dark text-white border-secondary">
+                        <label class="form-label small text-muted">Huecos a rellenar (Solo para cartas negras):</label>
+                        <select id="custom-card-pick" class="form-select bg-light text-dark border-dark">
                             <option value="1">1 Carta (Elige 1)</option>
                             <option value="2">2 Cartas (Elige 2)</option>
                             <option value="3">3 Cartas (Elige 3)</option>
@@ -399,22 +381,7 @@
                 </div>
             </div>
         </div>
-    <!-- MODAL: CÓDIGO QR PARA CELULARES -->
-    <div class="modal fade" id="modalQrCode" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered">
-            <div class="modal-content modal-cah-content text-center">
-                <div class="modal-header modal-cah-header">
-                    <h5 class="modal-title fw-bold">📱 Escanea para Jugar</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-4 d-flex flex-column align-items-center">
-                    <div id="qrcode-container" class="p-3 bg-white rounded shadow mb-3"></div>
-                    <p class="small text-secondary m-0">Apunta con la cámara de tu celular conectado al Punto de Acceso para entrar automáticamente.</p>
-                    <code id="qr-target-url" class="mt-2 text-warning small text-break"></code>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <script>
         window.cah_hotspotHost = "@ViewBag.HotspotIp:5012";
@@ -423,7 +390,7 @@
 
     <!-- Toast Notification Container -->
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 10000;">
-        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div id="liveToast" class="toast align-items-center text-dark bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body fs-6 fw-bold" id="toast-body">
                     Notificación

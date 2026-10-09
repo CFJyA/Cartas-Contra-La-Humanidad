@@ -189,13 +189,7 @@
             btnCopyLink.onclick = copyRoomLink;
         }
 
-        // QR Code modal trigger
-        const btnShowQr = document.getElementById('btn-show-qr');
-        if (btnShowQr) {
-            btnShowQr.onclick = () => {
-                generateQrCode();
-            };
-        }
+
 
         // Host controls
         const btnStartGame = document.getElementById('btn-start-game');
@@ -285,7 +279,6 @@
             });
     };
 
-    // Navigate back to the welcome screen (logo click)
     window.goToLobby = function () {
         if (currentRoom) {
             if (!confirm("¿Deseas salir de la sala y volver al inicio?")) return;
@@ -293,6 +286,8 @@
             if (connection) connection.invoke("LeaveRoom").catch(() => {});
             currentRoom = null;
         }
+        const overlay = document.getElementById('overlay-game-in-progress');
+        if (overlay) overlay.style.display = 'none';
         showScreen('welcome');
     };
 
@@ -358,17 +353,16 @@
                 <div class="overlay-box">
                     <div style="font-size:3rem;">⏳</div>
                     <h2 class="fw-bold mt-3">Juego en Progreso</h2>
-                    <p class="text-secondary">La partida ya comenzó. Por favor espera a que termine esta ronda o la partida completa.</p>
+                    <p class="text-secondary">La partida ya comenzó. Por favor espera a que termine y serás integrado automáticamente a la siguiente.</p>
                     <p class="badge bg-secondary fs-6">${code}</p>
-                    <button class="btn btn-cah btn-cah-primary mt-3" onclick="document.getElementById('overlay-game-in-progress').remove(); showScreen('welcome');">
-                        🏠 Volver al Lobby
+                    <button class="btn btn-cah btn-cah-primary mt-3" onclick="window.goToLobby()">
+                        🏠 Salir
                     </button>
                 </div>
             `;
             document.body.appendChild(overlay);
         }
         overlay.style.display = 'flex';
-        showScreen('welcome');
     }
 
     // Shows an overlay when the connection drops unexpectedly
@@ -431,33 +425,28 @@
         });
     }
 
-    function generateQrCode() {
-        const container = document.getElementById('qrcode-container');
-        const urlLabel = document.getElementById('qr-target-url');
-        if (!container || !currentRoom) return;
 
-        const mobileHost = window.cah_hotspotHost || window.location.host;
-        const joinUrl = `http://${mobileHost}/?room=${currentRoom.code}`;
-
-        container.innerHTML = '';
-        if (window.QRCode) {
-            new QRCode(container, {
-                text: joinUrl,
-                width: 180,
-                height: 180,
-                colorDark: "#000000",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.M
-            });
-        }
-        if (urlLabel) urlLabel.textContent = joinUrl;
-    }
 
     // Main Renderer
     function renderRoom(room) {
         if (!room) {
             showScreen('welcome');
             return;
+        }
+
+        const myPlayer = room.players.find(p => p.id === myPlayerId);
+        const isSpectating = myPlayer && myPlayer.isSpectator;
+
+        if (isSpectating) {
+            showGameInProgressOverlay(room.code);
+            // Hide other screens
+            screenWelcome.classList.add('d-none');
+            screenLobby.classList.add('d-none');
+            screenGame.classList.add('d-none');
+            return;
+        } else {
+            const overlay = document.getElementById('overlay-game-in-progress');
+            if (overlay) overlay.style.display = 'none';
         }
 
         // Update header room code badge

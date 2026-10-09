@@ -64,20 +64,15 @@ public class GameHub : Hub
             }
             else
             {
-                // New player trying to join — block if game is already active
-                if (room.State != "Lobby")
-                {
-                    return new { success = false, message = "gameInProgress" };
-                }
-
-                // New player joining lobby
+                // New player joining
                 player = new Player
                 {
                     Id = Guid.NewGuid().ToString("N"),
                     ConnectionId = Context.ConnectionId,
                     Name = string.IsNullOrWhiteSpace(playerName) ? $"Jugador {room.Players.Count + 1}" : playerName.Trim(),
                     Avatar = string.IsNullOrWhiteSpace(avatar) ? "😎" : avatar,
-                    IsConnected = true
+                    IsConnected = true,
+                    IsSpectator = room.State != "Lobby"
                 };
                 room.AddPlayer(player);
             }

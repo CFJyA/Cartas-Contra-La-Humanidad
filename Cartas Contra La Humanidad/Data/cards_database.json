@@ -2369,6 +2369,131 @@
       "id": "w_474",
       "text": "Vender fotos de patas en OnlyFans.",
       "type": "white"
+    },
+    {
+      "id": "w_bf77746d",
+      "text": "Los 43 de Ayotzinapa.",
+      "type": "white"
+    },
+    {
+      "id": "w_8df10b1e",
+      "text": "La matanza de Tlatelolco.",
+      "type": "white"
+    },
+    {
+      "id": "w_65736d37",
+      "text": "Fosas comunes en Tamaulipas.",
+      "type": "white"
+    },
+    {
+      "id": "w_b2db5a89",
+      "text": "Los Zetas.",
+      "type": "white"
+    },
+    {
+      "id": "w_bdb7b2d0",
+      "text": "El Cártel de Jalisco Nueva Generación (CJNG).",
+      "type": "white"
+    },
+    {
+      "id": "w_8ce44f4e",
+      "text": "Un convoy de sicarios con tenis pirata.",
+      "type": "white"
+    },
+    {
+      "id": "w_4b5a8f87",
+      "text": "Decapitar vatos y subirlo al Blog del Narco.",
+      "type": "white"
+    },
+    {
+      "id": "w_a25d7fa8",
+      "text": "El chupacabras.",
+      "type": "white"
+    },
+    {
+      "id": "w_caf686bd",
+      "text": "La Rosa de Guadalupe.",
+      "type": "white"
+    },
+    {
+      "id": "w_696014a9",
+      "text": "Dar mordida a los tránsitos.",
+      "type": "white"
+    },
+    {
+      "id": "w_f789da14",
+      "text": "Elba Esther Gordillo en lencería.",
+      "type": "white"
+    },
+    {
+      "id": "w_236435b4",
+      "text": "Un tinaco Rotoplas abandonado en el cerro.",
+      "type": "white"
+    },
+    {
+      "id": "w_78759b9f",
+      "text": "Cobro de piso en la tortillería.",
+      "type": "white"
+    },
+    {
+      "id": "w_29dcd3a2",
+      "text": "Linchamientos en el Estado de México.",
+      "type": "white"
+    },
+    {
+      "id": "w_598e28ed",
+      "text": "Gritar 'puto' en el estadio.",
+      "type": "white"
+    },
+    {
+      "id": "w_46391e28",
+      "text": "Echarle la culpa de todo a Calderón.",
+      "type": "white"
+    },
+    {
+      "id": "w_575e2b31",
+      "text": "Un bache del tamaño de un Tsuru.",
+      "type": "white"
+    },
+    {
+      "id": "w_4856d25d",
+      "text": "Ir al IMSS y salir sin pierna.",
+      "type": "white"
+    },
+    {
+      "id": "w_cb3da53f",
+      "text": "Un pozole de carne humana.",
+      "type": "white"
+    },
+    {
+      "id": "w_344be256",
+      "text": "Comprar piratería en Tepito.",
+      "type": "white"
+    },
+    {
+      "id": "w_75ef0f46",
+      "text": "Que te asalten en la combi.",
+      "type": "white"
+    },
+    {
+      "id": "w_cb39187f",
+      "text": "El Oxxo de la esquina que nunca tiene sistema.",
+      "type": "white"
+    },
+    {
+      "id": "w_a74bd98a",
+      "text": "AMLO diciendo 'abrazos, no balazos'.",
+      "type": "white"
+    },
+    {
+      "id": "w_10a2ca9e",
+      "text": "La Santa Muerte.",
+      "type": "white"
+    },
+    {
+      "id": "w_d5e6d7a9",
+      "text": "Balaceras en Culiacán.",
+      "type": "white"
     }
   ],
   "blackCards": [
@@ -3035,6 +3160,66 @@
       "text": "Cosas que jamás deberías meterte por la nariz: ______.",
       "pick": 1,
       "draw": 0,
+      "type": "black"
+    },
+    {
+      "id": "b_fbced507",
+      "text": "El verdadero secreto de AMLO para gobernar México es ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_e2521154",
+      "text": "¿Qué encontraron realmente en las fosas de Tamaulipas? ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_a8518412",
+      "text": "El próximo episodio de La Rosa de Guadalupe trata sobre ______ y ______.",
+      "pick": 2,
+      "type": "black"
+    },
+    {
+      "id": "b_e60c00c0",
+      "text": "La próxima estrategia de seguridad del gobierno incluirá ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_a701383e",
+      "text": "No me asaltes carnal, mejor llévate ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_30e41b59",
+      "text": "Antes de matarme, el sicario del CJNG me obligó a mirar ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_cb959a2d",
+      "text": "¿Cuál es la causa de los baches en el Estado de México? ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_6f759f09",
+      "text": "En Tepito, por 500 pesos te consigues ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_7dc3358a",
+      "text": "El verdadero responsable de lo de Ayotzinapa fue ______.",
+      "pick": 1,
+      "type": "black"
+    },
+    {
+      "id": "b_0a316bb1",
+      "text": "Si sobrevives al IMSS, te dan como premio ______.",
+      "pick": 1,
       "type": "black"
     }
   ]

@@ -11,6 +11,7 @@ public class PlayerClientDto
     public bool IsReady { get; set; } = false;
     public bool IsConnected { get; set; } = true;
     public bool IsBot { get; set; } = false;
+    public bool IsSpectator { get; set; } = false;
     public bool HasSubmitted { get; set; } = false;
 }
 

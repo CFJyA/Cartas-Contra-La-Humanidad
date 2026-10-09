@@ -57,7 +57,7 @@ public class GameRoom
             }
 
             // If game is already active, deal hand so player is ready
-            if (State != "Lobby")
+            if (State != "Lobby" && !player.IsSpectator)
             {
                 DealCardsToPlayer(player, 10);
             }
@@ -134,8 +134,8 @@ public class GameRoom
 
     public void ElectNewCzar()
     {
-        // Bots cannot be Czar — only human players
-        var eligiblePlayers = Players.Where(x => x.IsConnected && !x.IsBot).ToList();
+        // Bots and spectators cannot be Czar — only human active players
+        var eligiblePlayers = Players.Where(x => x.IsConnected && !x.IsBot && !x.IsSpectator).ToList();
         if (eligiblePlayers.Count == 0) return;
 
         foreach (var pl in Players) pl.IsCzar = false;
@@ -170,6 +170,7 @@ public class GameRoom
                 p.Score = 0;
                 p.SubmittedCards.Clear();
                 p.IsCzar = false;
+                p.IsSpectator = false;
                 if (!isRematch)
                 {
                     DealCardsToPlayer(p, 10);
@@ -203,14 +204,14 @@ public class GameRoom
             foreach (var p in Players)
             {
                 p.SubmittedCards.Clear();
-                if (p.Hand.Count < 10)
+                if (!p.IsSpectator && p.Hand.Count < 10)
                 {
                     DealCardsToPlayer(p, 10 - p.Hand.Count);
                 }
             }
 
-            // Rotate Czar — bots cannot be Czar
-            var activePlayers = Players.Where(p => p.IsConnected && !p.IsBot).ToList();
+            // Rotate Czar — bots and spectators cannot be Czar
+            var activePlayers = Players.Where(p => p.IsConnected && !p.IsBot && !p.IsSpectator).ToList();
             if (activePlayers.Count == 0) return;
 
             foreach (var pl in Players) pl.IsCzar = false;
@@ -234,7 +235,7 @@ public class GameRoom
             // If black card specifies Draw > 0, give each player extra cards
             if (ActiveBlackCard != null && ActiveBlackCard.Draw > 0)
             {
-                foreach (var p in Players)
+                foreach (var p in Players.Where(p => !p.IsSpectator))
                 {
                     DealCardsToPlayer(p, ActiveBlackCard.Draw);
                 }
@@ -320,8 +321,8 @@ public class GameRoom
                 Cards = new List<Card>(playedCards)
             });
 
-            // Check if all non-Czar connected players have submitted
-            var nonCzars = Players.Where(p => !p.IsCzar && p.IsConnected).ToList();
+            // Check if all non-Czar connected active players have submitted
+            var nonCzars = Players.Where(p => !p.IsCzar && p.IsConnected && !p.IsSpectator).ToList();
             if (nonCzars.All(p => p.HasSubmitted))
             {
                 TransitionToJudging();
@@ -462,6 +463,7 @@ public class GameRoom
                     IsReady = p.IsReady,
                     IsConnected = p.IsConnected,
                     IsBot = p.IsBot,
+                    IsSpectator = p.IsSpectator,
                     HasSubmitted = p.HasSubmitted
                 }).ToList()
             };

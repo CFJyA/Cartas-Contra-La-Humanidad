@@ -12,6 +12,7 @@ public class Player
     public bool IsReady { get; set; } = false;
     public bool IsConnected { get; set; } = true;
     public bool IsBot { get; set; } = false;
+    public bool IsSpectator { get; set; } = false;
     public List<Card> Hand { get; set; } = new();
     public List<Card> SubmittedCards { get; set; } = new();
     public bool HasSubmitted => SubmittedCards.Count > 0;
