@@ -37,7 +37,7 @@
             <!-- Player Setup -->
             <div class="mb-4">
                 <label class="form-label fw-bold">Tu Apodo de Juego:</label>
-                <input type="text" id="input-player-name" class="form-control form-control-lg bg-light text-dark border-dark" placeholder="Ej. El Cuma, Don Graf, La Toxica..." maxlength="25" />
+                <input type="text" id="input-player-name" class="form-control form-control-lg bg-cah-input border-cah text-cah-primary" placeholder="Ej. El Cuma, Don Graf, La Toxica..." maxlength="25" />
             </div>
 
             <div class="mb-4">
@@ -55,7 +55,7 @@
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link welcome-tab-btn fw-bold text-dark" id="tab-btn-join" onclick="showTab('join')">
+                    <button class="nav-link welcome-tab-btn fw-bold text-cah-primary" id="tab-btn-join" onclick="showTab('join')">
                         ⚡ Unirse a Sala
                     </button>
                 </li>
@@ -65,21 +65,22 @@
             <div id="tab-content-create" class="welcome-tab-content">
                 <div class="row g-3 mb-3">
                     <div class="col-sm-6">
-                        <label class="form-label small fw-bold text-muted">Puntos para Ganar:</label>
-                        <select id="select-target-score" class="form-select bg-light text-dark border-dark">
-                            <option value="5">5 Puntos (Partida Rápida)</option>
-                            <option value="7" selected>7 Puntos (Estándar)</option>
-                            <option value="10">10 Puntos (Larga)</option>
-                            <option value="15">15 Puntos (Maratón)</option>
+                        <label class="form-label small fw-bold text-cah-secondary">Puntos para Ganar:</label>
+                        <select id="select-target-score" class="form-select bg-cah-input border-cah text-cah-primary">
+                            <option value="3">¡Pendejo, No Dura Nada! | 3 pts.</option>
+                            <option value="5">Rapidín en el Baño | 5 pts.</option>
+                            <option value="7" selected>La Clásica Pedita | 7 pts.</option>
+                            <option value="10">Noche de Faltas a la Moral | 10 pts.</option>
+                            <option value="15">Hasta que Amanezca | 15 pts.</option>
                         </select>
                     </div>
                     <div class="col-sm-6">
-                        <label class="form-label small fw-bold text-muted">Tiempo por Ronda:</label>
-                        <select id="select-timer-seconds" class="form-select bg-light text-dark border-dark">
-                            <option value="30">30 Segundos (Frenético)</option>
-                            <option value="60" selected>60 Segundos (Equilibrado)</option>
-                            <option value="90">90 Segundos (Chill)</option>
-                            <option value="0">Sin Límite de Tiempo</option>
+                        <label class="form-label small fw-bold text-cah-secondary">Tiempo por Ronda:</label>
+                        <select id="select-timer-seconds" class="form-select bg-cah-input border-cah text-cah-primary">
+                            <option value="30">Frenético | 30 seg.</option>
+                            <option value="60" selected>Equilibrado | 60 seg.</option>
+                            <option value="90">Chill | 90 seg.</option>
+                            <option value="0">Pa' Los Lentos | Sin Límite</option>
                         </select>
                     </div>
                 </div>
@@ -87,7 +88,7 @@
                 <div class="form-check form-switch mb-4">
                     <input class="form-check-input" type="checkbox" id="check-rando-bot" checked>
                     <label class="form-check-label fw-bold" for="check-rando-bot">
-                        Incluir a <em>Rando Cardrissian</em> (Bot fantasma que juega cartas al azar 🤖)
+                        Incluir a <em>El Bot Tóxico</em> (Un bot wey que tira cartas a lo pendejo 🤖)
                     </label>
                 </div>
 
@@ -99,8 +100,8 @@
             <!-- Tab Content: Join Room -->
             <div id="tab-content-join" class="welcome-tab-content d-none">
                 <div class="mb-4">
-                    <label class="form-label small fw-bold text-muted">Código de la Sala:</label>
-                    <input type="text" id="input-join-code" class="form-control form-control-lg bg-light text-dark border-dark text-uppercase fw-bold text-center letter-spacing-2" placeholder="EJ. VERGA69" maxlength="10" />
+                    <label class="form-label small fw-bold text-cah-secondary">Código de la Sala:</label>
+                    <input type="text" id="input-join-code" class="form-control form-control-lg bg-cah-input border-cah text-cah-primary text-uppercase fw-bold text-center letter-spacing-2" placeholder="EJ. VERGA69" maxlength="10" />
                 </div>
 
                 <button class="btn btn-cah btn-cah-primary w-100 py-3 fs-5" onclick="joinRoom()">
@@ -113,7 +114,7 @@
     <!-- SCREEN 2: LOBBY -->
     <section id="screen-lobby" class="d-none">
         <div class="lobby-code-box">
-            <span class="text-muted small fw-bold text-uppercase">Código de tu Sala</span>
+            <span class="text-cah-secondary small fw-bold text-uppercase">Código de tu Sala</span>
             <div class="room-code-display" id="lobby-room-code">------</div>
             <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
                 <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-copy-room-link">
@@ -148,7 +149,7 @@
             </div>
 
             <!-- Non-Host Message -->
-            <div id="lobby-waiting-notice" class="mt-4 text-center text-muted py-3 d-none">
+            <div id="lobby-waiting-notice" class="mt-4 text-center text-cah-secondary py-3 d-none">
                 <div class="spinner-border spinner-border-sm me-2" role="status"></div>
                 Esperando a que el anfitrión inicie la partida... ¡Prepárense para ser funados!
             </div>
@@ -163,8 +164,8 @@
                 <div class="fw-bold">
                     Ronda <span class="badge bg-secondary fs-6" id="top-round-number">1</span>
                 </div>
-                <div class="text-muted small">
-                    Meta: <span class="fw-bold text-dark" id="top-target-score">7</span> pts
+                <div class="text-cah-secondary small">
+                    Meta: <span class="fw-bold text-cah-primary" id="top-target-score">7</span> pts
                 </div>
                 <div class="d-flex align-items-center gap-1 border-start border-dark ps-3">
                     <span class="badge-czar">👑 ZAR:</span>
@@ -195,7 +196,7 @@
                 <div id="playing-czar-banner" class="text-center py-4 d-none">
                     <div style="font-size:3rem; margin-bottom:0.5rem;">👑</div>
                     <h3 class="fw-bold">ERES EL ZAR DE ESTA RONDA</h3>
-                    <p class="text-muted">Los otros jugadores están eligiendo sus cartas más atroces. Relájate y espera sus respuestas.</p>
+                    <p class="text-cah-secondary">Los otros jugadores están eligiendo sus cartas más atroces. Relájate y espera sus respuestas.</p>
                     <div class="d-flex flex-wrap justify-content-center gap-2 mt-3" id="czar-submission-progress">
                         <!-- Progress pills injected here -->
                     </div>
@@ -266,7 +267,7 @@
             <div class="hand-header">
                 <div>
                     <h4 class="fw-bold m-0">Tus Cartas Blancas</h4>
-                    <span class="text-muted small">Haz clic en una carta para jugarla en la mesa</span>
+                    <span class="text-cah-secondary small">Haz clic en una carta para jugarla en la mesa</span>
                 </div>
                 <button class="btn btn-cah btn-cah-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalCustomCard">
                     + Proponer Carta
@@ -306,7 +307,7 @@
             </div>
         </div>
         <div class="chat-input-bar">
-            <input type="text" id="input-chat-text" class="form-control form-control-sm bg-light text-dark border-dark" placeholder="Escribe un mensaje..." maxlength="200" />
+            <input type="text" id="input-chat-text" class="form-control form-control-sm bg-cah-input border-cah text-cah-primary" placeholder="Escribe un mensaje..." maxlength="200" />
             <button class="btn btn-cah btn-cah-primary btn-sm" id="btn-send-chat">Enviar</button>
         </div>
     </aside>
@@ -357,21 +358,21 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <p class="text-muted small">Crea una carta con un chiste interno de tu grupo para inyectarla inmediatamente al mazo de la partida.</p>
+                    <p class="text-cah-secondary small">Crea una carta con un chiste interno de tu grupo para inyectarla inmediatamente al mazo de la partida.</p>
                     <div class="mb-3">
                         <label class="form-label fw-bold">Tipo de Carta:</label>
-                        <select id="custom-card-type" class="form-select bg-light text-dark border-dark">
+                        <select id="custom-card-type" class="form-select bg-cah-input border-cah text-cah-primary">
                             <option value="white">Carta Blanca (Respuesta)</option>
                             <option value="black">Carta Negra (Pregunta con ______)</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">Texto de la Carta:</label>
-                        <textarea id="custom-card-text" class="form-control bg-light text-dark border-dark" rows="3" placeholder="Ej. El fetiche secreto de [Amigo]..."></textarea>
+                        <textarea id="custom-card-text" class="form-control bg-cah-input border-cah text-cah-primary" rows="3" placeholder="Ej. El fetiche secreto de [Amigo]..."></textarea>
                     </div>
                     <div class="mb-3" id="custom-pick-group">
-                        <label class="form-label small text-muted">Huecos a rellenar (Solo para cartas negras):</label>
-                        <select id="custom-card-pick" class="form-select bg-light text-dark border-dark">
+                        <label class="form-label small text-cah-secondary">Huecos a rellenar (Solo para cartas negras):</label>
+                        <select id="custom-card-pick" class="form-select bg-cah-input border-cah text-cah-primary">
                             <option value="1">1 Carta (Elige 1)</option>
                             <option value="2">2 Cartas (Elige 2)</option>
                             <option value="3">3 Cartas (Elige 3)</option>
@@ -393,7 +394,7 @@
 
     <!-- Toast Notification Container -->
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 10000;">
-        <div id="liveToast" class="toast align-items-center text-dark bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div id="liveToast" class="toast align-items-center text-cah-primary bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body fs-6 fw-bold" id="toast-body">
                     Notificación

@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using Cartas_Contra_La_Humanidad.Hubs;
 using Cartas_Contra_La_Humanidad.Models;
 using Microsoft.AspNetCore.SignalR;
@@ -20,7 +20,7 @@ public class GameManager
 
     private static readonly string[] BotNames =
     [
-        "Rando Cardrissian", "El Bot Tóxico", "Don Graf", "Tía Pikachu", "El Cuma Bot", "Farkas Bot"
+        "El Brayan Bot", "El Bot TÃ³xico", "Don Graf", "TÃ­a Pikachu", "El Cuma Bot", "Farkas Bot"
     ];
 
     public GameManager(CardRepository cardRepository, IHubContext<GameHub> hubContext)
@@ -41,7 +41,7 @@ public class GameManager
         {
             Id = Guid.NewGuid().ToString("N"),
             Name = string.IsNullOrWhiteSpace(hostPlayerName) ? "Jugador 1" : hostPlayerName.Trim(),
-            Avatar = string.IsNullOrWhiteSpace(avatar) ? "😎" : avatar,
+            Avatar = string.IsNullOrWhiteSpace(avatar) ? "ðŸ˜Ž" : avatar,
             IsHost = true,
             IsReady = true
         };
@@ -120,7 +120,7 @@ public class GameManager
             var availableName = BotNames.FirstOrDefault(n => !usedNames.Contains(n)) 
                                 ?? $"Bot #{room.Players.Count(p => p.IsBot) + 1}";
 
-            string[] botAvatars = ["🤖", "🤡", "👽", "🦄", "💩", "🌮"];
+            string[] botAvatars = ["ðŸ¤–", "ðŸ¤¡", "ðŸ‘½", "ðŸ¦„", "ðŸ’©", "ðŸŒ®"];
             var rndAvatar = botAvatars[Random.Shared.Next(botAvatars.Length)];
 
             room.AddBot(availableName, rndAvatar);

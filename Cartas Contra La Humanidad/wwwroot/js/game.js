@@ -372,7 +372,7 @@
                 <div class="overlay-box">
                     <div style="font-size:3rem;">⏳</div>
                     <h2 class="fw-bold mt-3">Juego en Progreso</h2>
-                    <p class="text-secondary">La partida ya comenzó. Por favor espera a que termine y serás integrado automáticamente a la siguiente.</p>
+                    <p class="text-cah-secondary">La partida ya comenzó. Por favor espera a que termine y serás integrado automáticamente a la siguiente.</p>
                     <p class="badge bg-secondary fs-6">${code}</p>
                     <button class="btn btn-cah btn-cah-primary mt-3" onclick="window.goToLobby()">
                         🏠 Salir
@@ -395,7 +395,7 @@
                 <div class="overlay-box">
                     <div style="font-size:3rem;">🔌</div>
                     <h2 class="fw-bold mt-3">Te has desconectado</h2>
-                    <p class="text-secondary">Se perdió la conexión con el servidor del juego.</p>
+                    <p class="text-cah-secondary">Se perdió la conexión con el servidor del juego.</p>
                     <div class="d-flex gap-3 mt-3 justify-content-center flex-wrap">
                         <button class="btn btn-cah btn-cah-primary" id="btn-reconnect-overlay">
                             🔄 Reconectarme
@@ -892,7 +892,7 @@
             <h2 style="font-weight:900; color:var(--accent-gold); margin:0;">
                 ¡${escapeHtml(winnerName)} GANA LA RONDA!
             </h2>
-            <p style="color:var(--text-secondary); margin-top:0.5rem;">Se lleva un Asombroso Punto ⭐️</p>
+            <p style="color:var(--text-cah-secondary); margin-top:0.5rem;">Se lleva un Asombroso Punto ⭐️</p>
         `;
 
         winnerCardContainer.innerHTML = '';

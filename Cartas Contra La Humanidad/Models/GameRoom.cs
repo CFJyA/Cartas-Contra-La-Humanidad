@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 
 namespace Cartas_Contra_La_Humanidad.Models;
 
@@ -134,7 +134,7 @@ public class GameRoom
 
     public void ElectNewCzar()
     {
-        // Bots and spectators cannot be Czar — only human active players
+        // Bots and spectators cannot be Czar â€” only human active players
         var eligiblePlayers = Players.Where(x => x.IsConnected && !x.IsBot && !x.IsSpectator).ToList();
         if (eligiblePlayers.Count == 0) return;
 
@@ -181,9 +181,9 @@ public class GameRoom
                 }
             }
 
-            if (RandoCardrissianEnabled && !Players.Any(p => p.Name == "Rando Cardrissian"))
+            if (RandoCardrissianEnabled && !Players.Any(p => p.Name == "El Bot Tóxico"))
             {
-                AddBot("Rando Cardrissian", "🤖");
+                AddBot("El Bot Tóxico", "ðŸ¤–");
             }
 
             StartNewRound();
@@ -210,7 +210,7 @@ public class GameRoom
                 }
             }
 
-            // Rotate Czar — bots and spectators cannot be Czar
+            // Rotate Czar â€” bots and spectators cannot be Czar
             var activePlayers = Players.Where(p => p.IsConnected && !p.IsBot && !p.IsSpectator).ToList();
             if (activePlayers.Count == 0) return;
 
@@ -380,7 +380,7 @@ public class GameRoom
         }
     }
 
-    public void AddBot(string name, string avatar = "🤖")
+    public void AddBot(string name, string avatar = "ðŸ¤–")
     {
         lock (_lock)
         {
@@ -485,8 +485,8 @@ public class GameRoom
                 {
                     Id = s.Id,
                     PlayerId = "",
-                    PlayerName = "Anónimo",
-                    PlayerAvatar = "🃏",
+                    PlayerName = "AnÃ³nimo",
+                    PlayerAvatar = "ðŸƒ",
                     Cards = s.Cards,
                     IsWinner = s.IsWinner
                 }).ToList();
