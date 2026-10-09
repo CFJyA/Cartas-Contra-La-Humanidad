@@ -136,6 +136,25 @@
 
 
     function setupEventListeners() {
+        // Theme Toggle
+        const btnTheme = document.getElementById('btn-toggle-theme');
+        if (btnTheme) {
+            const savedTheme = localStorage.getItem('cah_theme') || 'light';
+            if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+            
+            btnTheme.onclick = () => {
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                if (isDark) {
+                    document.documentElement.removeAttribute('data-theme');
+                    localStorage.setItem('cah_theme', 'light');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('cah_theme', 'dark');
+                }
+                if (window.soundEngine) window.soundEngine.playCardClick();
+            };
+        }
+
         // Toggle Audio
         const btnMute = document.getElementById('btn-toggle-sound');
         if (btnMute) {
@@ -586,7 +605,7 @@
         const scoreContainer = document.getElementById('top-scoreboard');
         scoreContainer.innerHTML = '';
 
-        room.players.forEach(p => {
+        room.players.filter(p => !p.isSpectator).forEach(p => {
             const chip = document.createElement('div');
             chip.className = `player-score-chip ${p.isCzar ? 'is-czar' : ''} ${p.id === myPlayerId ? 'is-me' : ''}`;
             chip.innerHTML = `
@@ -653,7 +672,7 @@
             // Render submission progress for Czar
             const progressList = document.getElementById('czar-submission-progress');
             progressList.innerHTML = '';
-            room.players.filter(p => !p.isCzar).forEach(p => {
+            room.players.filter(p => !p.isCzar && !p.isSpectator).forEach(p => {
                 const item = document.createElement('div');
                 item.className = 'player-score-chip';
                 item.innerHTML = `
