@@ -183,7 +183,7 @@ public class GameRoom
 
             if (RandoCardrissianEnabled && !Players.Any(p => p.Name == "El Bot Tóxico"))
             {
-                AddBot("El Bot Tóxico", "ðŸ¤–");
+                AddBot("El Bot Tóxico", "🤖");
             }
 
             StartNewRound();
